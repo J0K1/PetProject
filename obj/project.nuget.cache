@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "toZtru8upHk=",
+  "success": true,
+  "projectFilePath": "E:\\ASP\\PetProject\\PetProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iljai\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\iljai\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\iljai\\.nuget\\packages\\scalar.aspnetcore\\2.4.13\\scalar.aspnetcore.2.4.13.nupkg.sha512"
+  ],
+  "logs": []
+}
