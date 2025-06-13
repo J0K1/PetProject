@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ASP\\PetProject\\PetProject.csproj": {}
+    "E:\\ASP\\Web_pet_project\\PetProject.csproj": {}
   },
   "projects": {
-    "E:\\ASP\\PetProject\\PetProject.csproj": {
+    "E:\\ASP\\Web_pet_project\\PetProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASP\\PetProject\\PetProject.csproj",
+        "projectUniqueName": "E:\\ASP\\Web_pet_project\\PetProject.csproj",
         "projectName": "PetProject",
-        "projectPath": "E:\\ASP\\PetProject\\PetProject.csproj",
+        "projectPath": "E:\\ASP\\Web_pet_project\\PetProject.csproj",
         "packagesPath": "C:\\Users\\iljai\\.nuget\\packages\\",
-        "outputPath": "E:\\ASP\\PetProject\\obj\\",
+        "outputPath": "E:\\ASP\\Web_pet_project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,10 @@
           "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.6, )"
             },

@@ -1,8 +1,5 @@
-using Microsoft.AspNetCore.Builder;
 using PetProject.Controllers;
 using PetProject.Services;
-using System.Diagnostics;
-using System.Text.Json;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder();
@@ -13,13 +10,27 @@ builder.Services.AddOpenApi();
 builder.Services.AddSingleton<GameService>();
 builder.Services.AddSingleton<GamesController>();
 
+builder.Services.AddSingleton<UserService>();
+builder.Services.AddSingleton<UserController>();
+
+builder.Logging.AddConsole();
+
 var app = builder.Build();
+
+//GamesController? gamesController = app.Services.GetService<GamesController>();
 
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
     app.MapScalarApiReference();
 }
+
+app.UseStatusCodePages(async context =>
+{
+    await context.HttpContext.Response.WriteAsync($"{context.HttpContext.Request.Path} isn`t found {context.HttpContext.Response.StatusCode}");
+});
+
+//app.Map("/", (IConfiguration appConfig) => $"JAVA_HOME: {appConfig["JAVA_HOME"] ?? "not set"}");
 
 app.Use(async (context, next) =>
 {
@@ -28,18 +39,15 @@ app.Use(async (context, next) =>
         context.Response.Redirect("/scalar/");
         return;
     }
+    else if (context.Request.Path == "/g")
+    {
+        context.Response.Redirect("/games/1");
+        return;
+    }
     await next();
 });
 
-//app.Map("/games/getall", async appBuilder =>
-//{
-//    GamesController? gamesController = app.Services.GetService<GamesController>();
-//    appBuilder.Run(gamesController.HandleGetAllGames);
-//});
-
 app.UseHttpsRedirection();
 app.MapControllers();
-
-//app.Run(async (context) => await context.Response.WriteAsync($"{app.Environment.ApplicationName}"));
 
 app.Run();
