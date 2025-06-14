@@ -16,12 +16,12 @@ namespace PetProject.Controllers
         }
 
         [HttpGet("GetUserByLogin{login}")]
-        public ActionResult<User?> GetUserByLogin(string login)
+        public ActionResult<UserEntity?> GetUserByLogin(string login)
         {
             if (login  == null)
                 return NoContent();
 
-            User? user = _userService.GetUserByLogin(login);
+            UserEntity? user = _userService.GetUserByLogin(login);
             
             if (user == null)
                 return NotFound();

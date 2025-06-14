@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "E:\\ASP\\Web_pet_project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\models\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:models\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\configurations\\gameconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:configurations\\gameconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|e:\\asp\\web_pet_project\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E83F8E8A-6C38-413A-A31E-E0D0BC43EF1D}|PetProject.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,24 +54,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\ASP\\Web_pet_project\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-13T18:00:59.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameConfiguration.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\Configurations\\GameConfiguration.cs",
+              "RelativeDocumentMoniker": "Configurations\\GameConfiguration.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project\\Configurations\\GameConfiguration.cs",
+              "RelativeToolTip": "Configurations\\GameConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T17:17:30.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "Configurations\\UserConfiguration.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T17:17:25.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "AppDBContext.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project\\AppDBContext.cs",
+              "RelativeToolTip": "AppDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T16:48:56.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\ASP\\Web_pet_project\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\ASP\\Web_pet_project\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T17:43:22.756Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "UserService.cs",
               "DocumentMoniker": "E:\\ASP\\Web_pet_project\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\UserService.cs",
@@ -63,25 +131,24 @@
               "RelativeToolTip": "Services\\UserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T18:26:28.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T18:26:28.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\Models\\UserEntity.cs",
+              "RelativeDocumentMoniker": "Models\\UserEntity.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project\\Models\\UserEntity.cs",
+              "RelativeToolTip": "Models\\UserEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T18:21:40.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "UserController.cs",
               "DocumentMoniker": "E:\\ASP\\Web_pet_project\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
@@ -94,39 +161,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "GameService.cs",
               "DocumentMoniker": "E:\\ASP\\Web_pet_project\\Services\\GameService.cs",
               "RelativeDocumentMoniker": "Services\\GameService.cs",
               "ToolTip": "E:\\ASP\\Web_pet_project\\Services\\GameService.cs",
               "RelativeToolTip": "Services\\GameService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T17:43:20.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Game.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\Models\\Game.cs",
-              "RelativeDocumentMoniker": "Models\\Game.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\Models\\Game.cs",
-              "RelativeToolTip": "Models\\Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "GameEntity.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\Models\\GameEntity.cs",
+              "RelativeDocumentMoniker": "Models\\GameEntity.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project\\Models\\GameEntity.cs",
+              "RelativeToolTip": "Models\\GameEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T17:43:19.094Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "GameController.cs",
               "DocumentMoniker": "E:\\ASP\\Web_pet_project\\Controllers\\GameController.cs",
               "RelativeDocumentMoniker": "Controllers\\GameController.cs",
               "ToolTip": "E:\\ASP\\Web_pet_project\\Controllers\\GameController.cs",
               "RelativeToolTip": "Controllers\\GameController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAIA5wBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAswFQAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T17:35:44.865Z",
               "EditorCaption": ""

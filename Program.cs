@@ -1,17 +1,26 @@
+using Microsoft.EntityFrameworkCore;
+using PetProject;
 using PetProject.Controllers;
 using PetProject.Services;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder();
+var configuration = builder.Configuration;
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
-builder.Services.AddSingleton<GameService>();
-builder.Services.AddSingleton<GamesController>();
+builder.Services.AddScoped<GameService>();
+builder.Services.AddScoped<GamesController>();
 
 builder.Services.AddSingleton<UserService>();
 builder.Services.AddSingleton<UserController>();
+
+builder.Services.AddDbContext<AppDBContext>(
+    options =>
+    {
+        options.UseNpgsql(configuration.GetConnectionString(nameof(AppDBContext)));
+    });
 
 builder.Logging.AddConsole();
 

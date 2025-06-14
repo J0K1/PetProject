@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Mvc;
 using PetProject.Models;
 using PetProject.Services;
 
@@ -9,30 +10,39 @@ namespace PetProject.Controllers
     public class GamesController : Controller
     {
         private readonly GameService _gameService;
-        private ILogger _logger;
+        private readonly ILogger<GamesController> _logger;
+
         public GamesController(GameService gameService, ILogger<GamesController> logger)
         {
             _gameService = gameService;
             _logger = logger;
         }
 
-        [HttpGet("GetAll")]
-        public ActionResult<IEnumerable<Game>> GetAll()
+        [HttpPost("AddGames")]
+        public async Task<ActionResult> AddGames()
         {
-            if (DBSize < 0)
+            await _gameService.AddGamesAsync();
+            return Ok();
+        }
+
+        [HttpGet("GetAll")]
+        public async Task<ActionResult<IEnumerable<GameEntity>>> GetAll()
+        {
+            var games = await _gameService.GetAllAsync();
+            if (games == null || !games.Any())
                 return NoContent();
 
             _logger.LogInformation("Get all");
-            return Ok(_gameService.GetAll());
+            return Ok(games);
         }
 
         [HttpGet("GetById/{id:int}")]
-        public ActionResult<Game> GetById(int id)
+        public async Task<ActionResult<GameEntity>> GetById(int id)
         {
-            if(id <= 0 || id > DBSize)
+            if (id <= 0)
                 return NoContent();
 
-            var game = _gameService.GetById(id);
+            var game = await _gameService.GetByIdAsync(id);
 
             if (game == null)
                 return NotFound();
@@ -42,29 +52,29 @@ namespace PetProject.Controllers
         }
 
         [HttpGet("GetByTitle/{title}")]
-        public ActionResult<Game> GetByTitle(string title)
+        public async Task<ActionResult<List<GameEntity>>> GetByTitle(string title)
         {
-            if(title == null || title.Length < 1)
+            if (string.IsNullOrEmpty(title))
                 return NoContent();
 
-            var game = _gameService.GetByTitle(title);
+            var games = await _gameService.GetByTitleAsync(title);
 
-            if(game == null)
+            if (games == null || !games.Any())
                 return NotFound();
 
             _logger.LogInformation("Get by title");
-            return Ok(game);
+            return Ok(games);
         }
 
         [HttpGet("GetByYear/{year:int}")]
-        public ActionResult<List<Game>> GetByYear(int year)
+        public async Task<ActionResult<List<GameEntity>>> GetByYear(int year)
         {
-            if(year <= 1900)
+            if (year <= 1900)
                 return NoContent();
 
-            List<Game> games = _gameService.GetByYear(year);
+            var games = await _gameService.GetByYearAsync(year);
 
-            if(games == null)
+            if (games == null || !games.Any())
                 return NotFound();
 
             _logger.LogInformation("Get by year");
@@ -72,25 +82,20 @@ namespace PetProject.Controllers
         }
 
         [HttpPost("Create")]
-        public ActionResult<Game> Create(Game game)
+        public async Task<ActionResult<GameEntity>> Create(int id, string title, string genre, int year)
         {
-            if(game == null) 
-                return NoContent();
-
-            _gameService.Add(game);
+            var game = new GameEntity { Id = id, Title = title, Genre = genre, Year = year };
+            await _gameService.AddAsync(game);
             _logger.LogInformation("Create");
             return CreatedAtAction(nameof(GetById), new { id = game.Id }, game);
         }
 
-        [HttpPut("Update")]
-        public ActionResult<Game> Update(int id, Game updatedGame)
+        [HttpPut("Update/{id:int}")]
+        public async Task<ActionResult> Update(int id, string title, string genre, int year)
         {
-            if (updatedGame == null || id <= 0 || id >= DBSize)
-                return NoContent();
-
-            bool result = _gameService.Update(id, updatedGame);
-            
-            if(!result)
+            var updatedGame = new GameEntity { Id = id, Title = title, Genre = genre, Year = year};
+            bool result = await _gameService.UpdateAsync(id, updatedGame);
+            if (!result)
                 return NotFound();
 
             _logger.LogInformation("Update");
@@ -98,20 +103,14 @@ namespace PetProject.Controllers
         }
 
         [HttpDelete("Delete/{id:int}")]
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            if(id <= 0 || id >= DBSize)
-                return NoContent();
-
-            bool result = _gameService.Delete(id);
-
-            if(!result)
+            bool result = await _gameService.DeleteAsync(id);
+            if (!result)
                 return NotFound();
 
             _logger.LogInformation("Delete");
             return NoContent();
         }
-
-        private int DBSize => _gameService.GetAll().Count;
     }
 }

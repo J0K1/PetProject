@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "PetProject.Controllers.GamesController",
+    "Method": "AddGames",
+    "RelativePath": "Games/AddGames",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetProject.Controllers.GamesController",
     "Method": "Create",
     "RelativePath": "Games/Create",
     "HttpMethod": "POST",
@@ -8,14 +18,29 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "game",
-        "Type": "PetProject.Models.Game",
-        "IsRequired": true
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "genre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "PetProject.Models.Game",
+        "Type": "PetProject.Models.GameEntity",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -51,7 +76,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[PetProject.Models.Game, PetProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PetProject.Models.GameEntity, PetProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -77,7 +102,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "PetProject.Models.Game",
+        "Type": "PetProject.Models.GameEntity",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -103,7 +128,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "PetProject.Models.Game",
+        "Type": "System.Collections.Generic.List\u00601[[PetProject.Models.GameEntity, PetProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -129,7 +154,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[PetProject.Models.Game, PetProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[PetProject.Models.GameEntity, PetProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -142,7 +167,7 @@
   {
     "ContainingType": "PetProject.Controllers.GamesController",
     "Method": "Update",
-    "RelativePath": "Games/Update",
+    "RelativePath": "Games/Update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -150,25 +175,25 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "title",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "updatedGame",
-        "Type": "PetProject.Models.Game",
-        "IsRequired": true
+        "Name": "genre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "PetProject.Models.Game",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "PetProject.Controllers.UserController",
@@ -186,7 +211,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "PetProject.Models.User",
+        "Type": "PetProject.Models.UserEntity",
         "MediaTypes": [
           "text/plain",
           "application/json",
