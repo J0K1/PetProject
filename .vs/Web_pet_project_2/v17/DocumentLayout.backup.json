@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\ASP\\Web_pet_project_2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\views\\pages\\gamedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:views\\pages\\gamedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\views\\pages\\store.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:views\\pages\\store.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameDetails.cshtml",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\GameDetails.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\GameDetails.cshtml",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\GameDetails.cshtml",
+              "RelativeToolTip": "Views\\Pages\\GameDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T15:10:34.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T15:09:44.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-16T15:07:05.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Store.cshtml",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\Store.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\Store.cshtml",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\Store.cshtml",
+              "RelativeToolTip": "Views\\Pages\\Store.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T15:06:53.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T14:58:20.036Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

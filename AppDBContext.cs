@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PetProject.Configurations;
 using PetProject.Models;
-using System.Data;
 
 namespace PetProject
 {

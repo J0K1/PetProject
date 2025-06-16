@@ -1,0 +1,110 @@
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.game-tile {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+    .game-tile:hover {
+        transform: translateY(-4px);
+    }
+
+.game-cover {
+    width: 100%;
+    height: 120px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .game-cover img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+.game-info {
+    padding: 12px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .game-info h3 {
+        margin: 0 0 8px;
+        font-size: 1.1rem;
+    }
+
+.genre-year {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.details-link {
+    align-self: flex-start;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+    .details-link:hover {
+        text-decoration: underline;
+    }
+
+/* Фиксируем шапку и делаем её flex */
+.site-header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Ссылки слева */
+.nav-left .nav-link {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+    .nav-left .nav-link:hover {
+        color: #007bff;
+    }
+
+/* Стили для кнопки входа */
+.btn-login {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+    .btn-login:hover {
+        background-color: #0056b3;
+    }

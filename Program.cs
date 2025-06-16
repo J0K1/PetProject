@@ -1,28 +1,19 @@
-using Microsoft.EntityFrameworkCore;
-using PetProject;
-using PetProject.Controllers;
-using PetProject.Services;
+using PetProject.Extensions;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder();
 var configuration = builder.Configuration;
 
-builder.Services.AddControllers();
-builder.Services.AddOpenApi();
-
-builder.Services.AddScoped<GameService>();
-builder.Services.AddScoped<GamesController>();
-
-builder.Services.AddSingleton<UserService>();
-builder.Services.AddSingleton<UserController>();
-
-builder.Services.AddDbContext<AppDBContext>(
-    options =>
-    {
-        options.UseNpgsql(configuration.GetConnectionString(nameof(AppDBContext)));
-    });
-
 builder.Logging.AddConsole();
+
+builder.Services.AddAppServices(builder.Configuration);
+
+builder.Services.AddControllersWithViews()
+                .AddRazorRuntimeCompilation();
+
+// (по желанию) CORS, статические файлы и т.п.
+builder.Services.AddCors(o => o.AddPolicy("AllowAll",
+    p => p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
 
 var app = builder.Build();
 
@@ -34,6 +25,15 @@ if (app.Environment.IsDevelopment())
     app.MapScalarApiReference();
 }
 
+app.UseStaticFiles();
+app.UseRouting();
+app.UseCors("AllowAll");
+
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Pages}/{action=Store}/{id?}");
+
 app.UseStatusCodePages(async context =>
 {
     await context.HttpContext.Response.WriteAsync($"{context.HttpContext.Request.Path} isn`t found {context.HttpContext.Response.StatusCode}");
@@ -41,20 +41,15 @@ app.UseStatusCodePages(async context =>
 
 //app.Map("/", (IConfiguration appConfig) => $"JAVA_HOME: {appConfig["JAVA_HOME"] ?? "not set"}");
 
-app.Use(async (context, next) =>
-{
-    if (context.Request.Path == "/")
-    {
-        context.Response.Redirect("/scalar/");
-        return;
-    }
-    else if (context.Request.Path == "/g")
-    {
-        context.Response.Redirect("/games/1");
-        return;
-    }
-    await next();
-});
+//app.Use(async (context, next) =>
+//{
+//    if (context.Request.Path == "/")
+//    {
+//        context.Response.Redirect("/scalar/");
+//        return;
+//    }
+//    await next();
+//});
 
 app.UseHttpsRedirection();
 app.MapControllers();

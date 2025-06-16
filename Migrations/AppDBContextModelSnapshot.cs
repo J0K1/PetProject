@@ -27,12 +27,12 @@ namespace PetProject.Migrations
                     b.Property<int>("GamesId")
                         .HasColumnType("integer");
 
-                    b.Property<Guid>("UsersId")
+                    b.Property<Guid>("UserEntityId")
                         .HasColumnType("uuid");
 
-                    b.HasKey("GamesId", "UsersId");
+                    b.HasKey("GamesId", "UserEntityId");
 
-                    b.HasIndex("UsersId");
+                    b.HasIndex("UserEntityId");
 
                     b.ToTable("UserGames", (string)null);
                 });
@@ -71,21 +71,49 @@ namespace PetProject.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsBanned")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("Login")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(64)
+                        .HasColumnType("character varying(64)");
 
-                    b.Property<string>("NickName")
+                    b.Property<string>("Nick")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(32)
+                        .HasColumnType("character varying(32)");
 
                     b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
+
+                    b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("UserFriends", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("FriendId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("UserId", "FriendId");
+
+                    b.HasIndex("FriendId");
+
+                    b.ToTable("UserFriends");
                 });
 
             modelBuilder.Entity("GameEntityUserEntity", b =>
@@ -98,7 +126,22 @@ namespace PetProject.Migrations
 
                     b.HasOne("PetProject.Models.UserEntity", null)
                         .WithMany()
-                        .HasForeignKey("UsersId")
+                        .HasForeignKey("UserEntityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("UserFriends", b =>
+                {
+                    b.HasOne("PetProject.Models.UserEntity", null)
+                        .WithMany()
+                        .HasForeignKey("FriendId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("PetProject.Models.UserEntity", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

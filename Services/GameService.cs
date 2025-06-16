@@ -47,7 +47,7 @@ namespace PetProject.Services
         public async Task<List<GameEntity>> GetByTitleAsync(string title)
         {
             return await _dbContext.Games
-                .Where(g => g.Title.Contains(title))
+                .Where(g => g.Title.ToLower().Contains(title.ToLower()))
                 .ToListAsync();
         }
 

@@ -76,7 +76,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[PetProject.Models.GameEntity, PetProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PetProject.Models.GameEntity, Web_pet_project_2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -128,7 +128,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[PetProject.Models.GameEntity, PetProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[PetProject.Models.GameEntity, Web_pet_project_2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -154,7 +154,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[PetProject.Models.GameEntity, PetProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[PetProject.Models.GameEntity, Web_pet_project_2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -197,9 +197,103 @@
   },
   {
     "ContainingType": "PetProject.Controllers.UserController",
-    "Method": "GetUserByLogin",
-    "RelativePath": "User/GetUserByLogin{login}",
-    "HttpMethod": "GET",
+    "Method": "AddFriendToUser",
+    "RelativePath": "User/AddFriendToUser",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userNick",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "friendNick",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetProject.Controllers.UserController",
+    "Method": "AddGameToUser",
+    "RelativePath": "User/AddGameToUser",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nick",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "gameTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetProject.Controllers.UserController",
+    "Method": "AddNewUser",
+    "RelativePath": "User/AddNewUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "nick",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetProject.Controllers.UserController",
+    "Method": "AddUsers",
+    "RelativePath": "User/AddUsers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetProject.Controllers.UserController",
+    "Method": "BanUserByNick",
+    "RelativePath": "User/BanUserByNick/{nick}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nick",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetProject.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "User/DeleteUser/{login}/{password}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -207,11 +301,26 @@
         "Name": "login",
         "Type": "System.String",
         "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetProject.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "User/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "PetProject.Models.UserEntity",
+        "Type": "System.Collections.Generic.List\u00601[[PetProject.Models.UserEntity, Web_pet_project_2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -220,5 +329,135 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "PetProject.Controllers.UserController",
+    "Method": "GetUserByNick",
+    "RelativePath": "User/GetUserByNick/{nick}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nick",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PetProject.Models.UserEntity, Web_pet_project_2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PetProject.Controllers.UserController",
+    "Method": "GetUserFriendsByNick",
+    "RelativePath": "User/GetUserFriendsByNick/{nick}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nick",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PetProject.Models.UserEntity, Web_pet_project_2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PetProject.Controllers.UserController",
+    "Method": "GetUserGamesByNick",
+    "RelativePath": "User/GetUserGamesByNick/{nick}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nick",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PetProject.Models.GameEntity, Web_pet_project_2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PetProject.Controllers.UserController",
+    "Method": "UpdateNick",
+    "RelativePath": "User/UpdateNick/{login}/{password}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newNick",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetProject.Controllers.UserController",
+    "Method": "UpdatePassword",
+    "RelativePath": "User/UpdatePassword/{login}/{password}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

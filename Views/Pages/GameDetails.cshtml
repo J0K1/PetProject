@@ -1,0 +1,23 @@
+﻿@model int
+@{
+    ViewData["Title"] = "Детали игры";
+}
+
+<div id="game-details"></div>
+
+<script>
+    const gameId = @Model;
+    axios.get(`/Games/GetById/${gameId}`)
+        .then(res => {
+            const g = res.data;
+            document.getElementById('game-details').innerHTML = `
+                <h2>${g.title}</h2>
+                <p>ID: ${g.id}</p>
+                <p>Жанр: ${g.genre}</p>
+                <p>Год: ${g.year}</p>
+            `;
+        })
+        .catch(err => {
+            document.getElementById('game-details').innerText = 'Игра не найдена';
+        });
+</script>

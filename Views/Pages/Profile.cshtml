@@ -1,0 +1,31 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Профиль";
+}
+
+<h1>Профиль: @Model</h1>
+<div id="profile"></div>
+
+<script>
+    const nick = '@Model';
+    axios.get(`/User/GetUserByNick/${nick}`)
+        .then(res => {
+            const u = res.data[0];
+            document.getElementById('profile').innerHTML = `
+                <p>Id: ${u.id}</p>
+                <p>Login: ${u.login}</p>
+                <p>Nick: ${u.nick}</p>
+                <p>Email: ${u.email}</p>
+                <p>Role: ${u.role}</p>
+                <p>Active: ${u.isActive}</p>
+                <p>Banned: ${u.isBanned}</p>
+                <h3>Друзья:</h3>
+                <ul>${u.friends.map(f => `<li>${f.nick}</li>`).join('')}</ul>
+                <h3>Игры:</h3>
+                <ul>${u.games.map(g => `<li>${g.title}</li>`).join('')}</ul>
+            `;
+        })
+        .catch(() => {
+            document.getElementById('profile').innerText = 'Пользователь не найден';
+        });
+</script>

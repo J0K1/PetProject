@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Магазин";
+}
+
+<h1>Store</h1>
+<div id="games-grid" class="games-grid">
+    <!-- Плитки подгружаются скриптом -->
+</div>
+
+<script>
+    axios.get('/Games/GetAll')
+        .then(res => {
+            const container = document.getElementById('games-grid');
+            if (!res.data || res.data.length === 0) {
+                container.innerText = 'В магазине пока нет игр';
+                return;
+            }
+
+            res.data.forEach(game => {
+                const tile = document.createElement('div');
+                tile.className = 'game-tile';
+                tile.innerHTML = `
+                    <div class="game-cover">
+                        <!-- Здесь можно вставить картинку, если она есть -->
+                        <!-- <img src="~/images/${game.id}.jpg" alt="${game.title}" onerror="this.style.display='none'" /> -->
+                    </div>
+                    <div class="game-info">
+                        <h3>${game.title}</h3>
+                        <p class="genre-year">${game.genre} · ${game.year}</p>
+                        <a class="details-link" href="/Pages/GameDetails/${game.id}">Подробнее</a>
+                    </div>
+                `;
+                container.appendChild(tile);
+            });
+        })
+        .catch(err => {
+            console.error(err);
+            document.getElementById('games-grid').innerText = 'Ошибка загрузки игр';
+        });
+</script>
+

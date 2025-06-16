@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Регистрация";
+}
+
+<h1>Регистрация</h1>
+<form id="reg-form">
+    <label>Login: <input name="login" /></label><br />
+    <label>Password: <input name="password" type="password" /></label><br />
+    <label>Nick: <input name="nick" /></label><br />
+    <button type="submit">Зарегистрироваться</button>
+</form>
+
+<script>
+    document.getElementById('reg-form').addEventListener('submit', e => {
+        e.preventDefault();
+        const data = new URLSearchParams(new FormData(e.target));
+        axios.post(`/User/AddNewUser?${data.toString()}`)
+            .then(() => alert('Успешно зарегистрировано'))
+            .catch(() => alert('Ошибка'));
+    });
+</script>
