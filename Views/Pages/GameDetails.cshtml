@@ -1,23 +1,53 @@
-﻿@model int
+﻿@model PetProject.Models.GameEntity
+
 @{
-    ViewData["Title"] = "Детали игры";
+    ViewData["Title"] = Model.Title;
 }
 
-<div id="game-details"></div>
+<main class="game-page">
 
-<script>
-    const gameId = @Model;
-    axios.get(`/Games/GetById/${gameId}`)
-        .then(res => {
-            const g = res.data;
-            document.getElementById('game-details').innerHTML = `
-                <h2>${g.title}</h2>
-                <p>ID: ${g.id}</p>
-                <p>Жанр: ${g.genre}</p>
-                <p>Год: ${g.year}</p>
-            `;
-        })
-        .catch(err => {
-            document.getElementById('game-details').innerText = 'Игра не найдена';
-        });
-</script>
+    <!-- Hero Section -->
+    <section class="game-hero">
+        
+        <div class="hero-info">
+            <h1 class="hero-title">@Model.Title</h1>
+            <div class="hero-meta">
+                <span class="hero-genre">@Model.Genre</span>
+                <span class="hero-year">@Model.Year</span>
+            </div>
+            <div class="hero-price">$@Model.Price</div>
+            <button class="btn-play">Добавить в корзину</button>
+        </div>
+    </section>
+
+    <!-- Description -->
+    <section class="game-description">
+        <h2>Об игре</h2>
+        <p>
+            <!-- здесь динамически можно подгружать реальное описание -->
+            Это увлекательная игра в жанре «@Model.Genre», вышедшая в @Model.Year году.
+            Погрузись в атмосферу, исследуй мир и сразись с врагами!
+        </p>
+    </section>
+
+    <!-- Requirements / Additional Info -->
+    <section class="game-requirements">
+        <h2>Системные требования</h2>
+        <ul>
+            <li>OS: Windows 10+</li>
+            <li>CPU: Intel i5 / AMD Ryzen 5</li>
+            <li>RAM: 8 GB</li>
+            <li>GPU: Nvidia GTX 1060 / AMD RX 580</li>
+            <li>Storage: 20 GB свободного места</li>
+        </ul>
+    </section>
+
+    <!-- Related Games (заглушка) -->
+    <section class="game-related">
+        <h2>Похожие игры</h2>
+        <div class="related-list">
+            <p>Здесь будут ваши рекомендованные игры…</p>
+        </div>
+    </section>
+
+</main>

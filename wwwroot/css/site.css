@@ -1,110 +1,382 @@
-.games-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
-    margin-top: 20px;
+/* Общий сброс и базовые стили */
+body {
+    margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h3, p {
+    margin: 0;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+    .navbar-nav a {
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        color: #ccc;
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+        .navbar-nav a:hover {
+            background-color: #2a2a2a;
+            color: #fff;
+        }
+
+/* Кнопка входа */
+.login-button {
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid #555;
+    background: transparent;
+    border-radius: 8px;
+    color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+    .login-button:hover {
+        background-color: #00ffcc;
+        color: #2a2a2a;
+    }
+
+/* Основной заголовок */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Сетка карточек */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Контейнер карточки */
 .game-tile {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
     .game-tile:hover {
         transform: translateY(-4px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.7);
     }
 
+/* Обложка */
 .game-cover {
     width: 100%;
-    height: 120px;
-    background: #f0f0f0;
+    height: 140px;
+    background-color: #2a2a2a;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
     .game-cover img {
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-.game-info {
-    padding: 12px;
-    flex-grow: 1;
+/* Тело карточки */
+.game-body {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    flex-grow: 1;
 }
 
-    .game-info h3 {
-        margin: 0 0 8px;
-        font-size: 1.1rem;
-    }
-
-.genre-year {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 12px;
-}
-
-.details-link {
-    align-self: flex-start;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: 500;
-}
-
-    .details-link:hover {
-        text-decoration: underline;
-    }
-
-/* Фиксируем шапку и делаем её flex */
-.site-header {
-    position: sticky;
-    top: 0;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    z-index: 10;
-}
-
-.main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-/* Ссылки слева */
-.nav-left .nav-link {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-
-    .nav-left .nav-link:hover {
-        color: #007bff;
-    }
-
-/* Стили для кнопки входа */
-.btn-login {
-    display: inline-block;
-    padding: 6px 14px;
-    background-color: #007bff;
+/* Название */
+.game-title {
+    font-size: 1.1rem;
     color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 500;
-    transition: background-color 0.2s;
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
 }
 
-    .btn-login:hover {
-        background-color: #0056b3;
+/* Ряд с тегами и ценой */
+.game-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Жанровый тег */
+.game-tag {
+    display: inline-block;
+    background-color: #333;
+    color: #ccc;
+    padding: 0.2rem 0.6rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+/* Значок цены */
+.price-badge {
+    margin-left: auto;
+    background-color: #fff;
+    color: #000;
+    padding: 0.2rem 0.6rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Год выпуска */
+.game-year {
+    margin-top: auto; /* прижать вниз */
+    font-size: 0.85rem;
+    color: #888;
+}
+
+
+/* === Game Details Page === */
+.game-page {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Hero Section */
+.game-hero {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    background: linear-gradient(135deg, #1f1f1f 0%, #141414 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+}
+
+.hero-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.hero-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-genre,
+.hero-year {
+    background: #2a2a2a;
+    padding: 0.3rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.hero-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.btn-play {
+    background-color: #00ffcc;
+    color: #000;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: start;
+}
+
+    .btn-play:hover {
+        background-color: #00e6b8;
     }
+
+/* Sections */
+.game-description,
+.game-screenshots,
+.game-requirements,
+.game-related {
+    margin-top: 2.5rem;
+}
+
+    .game-description h2,
+    .game-screenshots h2,
+    .game-requirements h2,
+    .game-related h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+
+/* Requirements */
+.game-requirements ul {
+    list-style: none;
+    padding: 0;
+    color: #ccc;
+}
+
+.game-requirements li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+    .game-requirements li::before {
+        content: '-';
+        position: absolute;
+        left: 0;
+        color: #00ffcc;
+        font-size: 1.2rem;
+    }
+
+/* Related Games */
+.related-list {
+    background: #1e1e1e;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    color: #aaa;
+    text-align: center;
+}
+
+/* Mobile адаптация */
+@media (max-width: 768px) {
+    .game-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-info {
+        padding: 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}
+
+
+/* === Формы логина/регистрации === */
+.auth-container {
+    max-width: 400px;
+    margin: 3rem auto;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+    .auth-container h1 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #fff;
+        font-size: 1.8rem;
+    }
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth-input {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+}
+
+    .auth-input:focus {
+        outline: none;
+        border-color: #00ffcc;
+    }
+
+.auth-button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: #00ffcc;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    .auth-button:hover {
+        background-color: #00e6b8;
+    }
+
+.auth-link {
+    text-align: center;
+    margin-top: 1rem;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+    .auth-link a {
+        color: #00ffcc;
+        text-decoration: none;
+    }
+
+        .auth-link a:hover {
+            text-decoration: underline;
+        }

@@ -1,21 +1,33 @@
-﻿@{
+﻿@model PetProject.Models.Views.RegisterViewModel
+@{
     ViewData["Title"] = "Регистрация";
 }
 
-<h1>Регистрация</h1>
-<form id="reg-form">
-    <label>Login: <input name="login" /></label><br />
-    <label>Password: <input name="password" type="password" /></label><br />
-    <label>Nick: <input name="nick" /></label><br />
-    <button type="submit">Зарегистрироваться</button>
-</form>
+<div class="auth-container">
+    <h1>Регистрация</h1>
+    <form asp-action="Register" method="post" class="auth-form">
+        <label>Логин</label>
+        <input asp-for="Login" />
+        <span asp-validation-for="Login" class="text-error"></span>
 
-<script>
-    document.getElementById('reg-form').addEventListener('submit', e => {
-        e.preventDefault();
-        const data = new URLSearchParams(new FormData(e.target));
-        axios.post(`/User/AddNewUser?${data.toString()}`)
-            .then(() => alert('Успешно зарегистрировано'))
-            .catch(() => alert('Ошибка'));
-    });
-</script>
+        <label>Пароль</label>
+        <input asp-for="Password" type="password" />
+        <span asp-validation-for="Password" class="text-error"></span>
+
+        <label>Ник</label>
+        <input asp-for="Nick" />
+        <span asp-validation-for="Nick" class="text-error"></span>
+
+        <div class="form-footer-link" style="margin-top: 20px; text-align: center;">
+            <button type="submit" class="btn-play">Зарегистрироваться</button>
+        </div>
+    </form>
+
+    <div class="form-footer-link" style="margin-top: 20px; text-align: center;">
+        Уже есть аккаунт? <a asp-controller="Pages" asp-action="Login">Войти</a>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

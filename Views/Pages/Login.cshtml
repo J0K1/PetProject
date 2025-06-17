@@ -1,19 +1,29 @@
-﻿@{
+﻿@model PetProject.Models.Views.LoginViewModel
+@{
     ViewData["Title"] = "Вход";
 }
 
-<h1>Вход</h1>
-<form id="login-form">
-    <label>Login: <input name="login" /></label><br />
-    <label>Password: <input name="password" type="password" /></label><br />
-    <button type="submit">Войти</button>
-</form>
+<div class="auth-container">
+    <h1>Войти</h1>
+    <form asp-action="Login" method="post" class="auth-form">
+        <label>Логин</label>
+        <input asp-for="Login" />
+        <span asp-validation-for="Login" class="text-error"></span>
 
-<script>
-    document.getElementById('login-form').addEventListener('submit', e => {
-        e.preventDefault();
-        const { login, password } = Object.fromEntries(new FormData(e.target));
-        // Здесь можно хранить токен/сессию, пока просто редиректим
-        window.location.href = `/Pages/Profile?nick=${login}`;
-    });
-</script>
+        <label>Пароль</label>
+        <input asp-for="Password" type="password" />
+        <span asp-validation-for="Password" class="text-error"></span>
+
+        <div class="form-footer-link" style="margin-top: 20px; text-align: center;">
+            <button type="submit" class="btn-play">Войти</button>
+        </div>
+    </form>
+
+    <div class="form-footer-link" style="margin-top: 20px; text-align: center;">
+        Нет аккаунта? <a asp-controller="Pages" asp-action="Register">Зарегистрироваться</a>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

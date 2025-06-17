@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "E:\\ASP\\Web_pet_project_2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\views\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:views\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\views\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:views\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -15,12 +47,20 @@
       "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:views\\pages\\gamedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\views\\pages\\store.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:views\\pages\\store.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\models\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:models\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|e:\\asp\\web_pet_project_2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|Web_pet_project_2.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,30 +70,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameDetails.cshtml",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\GameDetails.cshtml",
-              "RelativeDocumentMoniker": "Views\\Pages\\GameDetails.cshtml",
-              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\GameDetails.cshtml",
-              "RelativeToolTip": "Views\\Pages\\GameDetails.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\Register.cshtml",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\Register.cshtml",
+              "RelativeToolTip": "Views\\Pages\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-16T15:10:34.055Z",
+              "WhenOpened": "2025-06-17T19:34:56.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\Login.cshtml",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\Login.cshtml",
+              "RelativeToolTip": "Views\\Pages\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T19:34:44.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T19:27:04.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Models\\UserEntity.cs",
+              "RelativeDocumentMoniker": "Models\\UserEntity.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Models\\UserEntity.cs",
+              "RelativeToolTip": "Models\\UserEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T19:27:00.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAIwIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T19:26:42.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Services\\GameService.cs",
+              "RelativeDocumentMoniker": "Services\\GameService.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Services\\GameService.cs",
+              "RelativeToolTip": "Services\\GameService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAkAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:32:16.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "E:\\ASP\\Web_pet_project_2\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-16T15:09:44.67Z",
               "EditorCaption": ""
@@ -61,40 +170,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PagesController.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Controllers\\PagesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PagesController.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Controllers\\PagesController.cs",
+              "RelativeToolTip": "Controllers\\PagesController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAUwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:32:00.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T14:58:20.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GameEntity.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Models\\GameEntity.cs",
+              "RelativeDocumentMoniker": "Models\\GameEntity.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Models\\GameEntity.cs",
+              "RelativeToolTip": "Models\\GameEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:32:27.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:31:45.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GameController.cs",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Controllers\\GameController.cs",
+              "RelativeToolTip": "Controllers\\GameController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:31:30.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "site.css",
               "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "E:\\ASP\\Web_pet_project_2\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAcwHMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFoBAAAAAAAAAAAAwH4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-06-16T15:07:05.819Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
+              "Title": "GameDetails.cshtml",
+              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\GameDetails.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\GameDetails.cshtml",
+              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\GameDetails.cshtml",
+              "RelativeToolTip": "Views\\Pages\\GameDetails.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwCQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T15:10:34.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Store.cshtml",
               "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\Store.cshtml",
               "RelativeDocumentMoniker": "Views\\Pages\\Store.cshtml",
               "ToolTip": "E:\\ASP\\Web_pet_project_2\\Views\\Pages\\Store.cshtml",
               "RelativeToolTip": "Views\\Pages\\Store.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-16T15:06:53.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project_2\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project_2\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T14:58:20.036Z",
               "EditorCaption": ""
             }
           ]

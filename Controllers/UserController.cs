@@ -29,6 +29,16 @@ namespace PetProject.Controllers
             return Ok(users);
         }
 
+        [HttpGet("GetUser/{login}/{password}")]
+        public async Task<ActionResult<UserEntity>> GetUser(string login, string password)
+        {
+            var user = await _userService.GetUserAsync(login, password);
+            if(user == null) 
+                return NoContent();
+
+            return Ok(user);
+        }
+
         [HttpGet("GetUserByNick/{nick}")]
         public async Task<ActionResult<List<UserEntity>>> GetUserByNick(string nick)
         {
@@ -61,34 +71,31 @@ namespace PetProject.Controllers
         [HttpPut("UpdatePassword/{login}/{password}")]
         public async Task<ActionResult> UpdatePassword(string login, string password, string newPassword)
         {
-            var user = new UserEntity { Login = login, Password = password };
-            bool isConfirm = await _userService.UpdatePasswordAsync(user, newPassword);
+            bool isConfirm = await _userService.UpdatePasswordAsync(login, password, newPassword);
             if (isConfirm)
                 return Ok();
             else
-                return BadRequest(user);
+                return BadRequest(login);
         }
 
         [HttpPut("UpdateNick/{login}/{password}")]
         public async Task<ActionResult> UpdateNick(string login, string password, string newNick)
         {
-            var user = new UserEntity { Login = login, Password = password };
-            bool isConfirm = await _userService.UpdateNickAsync(user, newNick);
+            bool isConfirm = await _userService.UpdateNickAsync(login, password, newNick);
             if (isConfirm)
                 return Ok();
             else
-                return BadRequest(user);
+                return BadRequest(login);
         }
 
         [HttpDelete("DeleteUser/{login}/{password}")]
         public async Task<ActionResult> DeleteUser(string login, string password)
         {
-            var user = new UserEntity { Login = login, Password = password };
-            bool isConfirm = await _userService.DeleteUserAsync(user);
+            bool isConfirm = await _userService.DeleteUserAsync(login, password);
             if (isConfirm)
                 return Ok();
             else
-                return BadRequest(user);
+                return BadRequest(login);
         }
 
         [HttpPut("BanUserByNick/{nick}")]

@@ -1,4 +1,4 @@
-namespace Web_pet_project_2.Models
+namespace PetProject.Models
 {
     public class ErrorViewModel
     {

@@ -17,5 +17,7 @@ namespace PetProject.Models
 
         public List<UserEntity> Friends { get; set; } = new();
         public List<GameEntity> Games { get; set; } = new();
+
+        public string PhotoUrl { get; set; } = "https://imgpng.ru/download/87340";
     }
 }

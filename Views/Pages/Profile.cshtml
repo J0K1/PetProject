@@ -1,31 +1,79 @@
-﻿@model string
+﻿@model PetProject.Models.UserEntity
 @{
     ViewData["Title"] = "Профиль";
+    var user = Model;
 }
 
-<h1>Профиль: @Model</h1>
-<div id="profile"></div>
+<style>
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-<script>
-    const nick = '@Model';
-    axios.get(`/User/GetUserByNick/${nick}`)
-        .then(res => {
-            const u = res.data[0];
-            document.getElementById('profile').innerHTML = `
-                <p>Id: ${u.id}</p>
-                <p>Login: ${u.login}</p>
-                <p>Nick: ${u.nick}</p>
-                <p>Email: ${u.email}</p>
-                <p>Role: ${u.role}</p>
-                <p>Active: ${u.isActive}</p>
-                <p>Banned: ${u.isBanned}</p>
-                <h3>Друзья:</h3>
-                <ul>${u.friends.map(f => `<li>${f.nick}</li>`).join('')}</ul>
-                <h3>Игры:</h3>
-                <ul>${u.games.map(g => `<li>${g.title}</li>`).join('')}</ul>
-            `;
-        })
-        .catch(() => {
-            document.getElementById('profile').innerText = 'Пользователь не найден';
-        });
-</script>
+    .game-cover {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        background-color: #ddd;
+    }
+
+    .clickable {
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .clickable:hover {
+        transform: scale(1.05);
+    }
+
+    .friends-list, .games-list {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+</style>
+
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+    <div>
+        <h1>Профиль</h1>
+
+        <h2>@user.Nick </h2>
+
+        @if (user.IsBanned)
+        {
+            <p style="color: red; font-weight: bold;">Banned</p>
+        }
+
+        <h3>Друзья</h3>
+        <div class="friends-list">
+            @foreach (var friend in user.Friends)
+            {
+                <a asp-action="Profile" asp-controller="Pages" asp-route-nick="@friend.Nick" title="@friend.Nick" class="clickable">
+                    <img class="avatar" src="@friend.PhotoUrl ?? " /images/default-avatar.png"" alt="@friend.Nick" />
+                </a>
+            }
+        </div>
+
+        <h3 style="margin-top: 30px;">Игры</h3>
+        <div class="games-list">
+            @foreach (var game in user.Games)
+            {
+                <a asp-action="GameDetails" asp-controller="Pages" asp-route-id="@game.Id" title="@game.Title" class="clickable">
+                    <img class="game-cover" src="@game.ImageUrl ?? " /images/default-game.png"" alt="@game.Title" />
+                </a>
+            }
+        </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <img class="avatar" style="width: 150px; height: 150px;"
+             src="@user.PhotoUrl ?? " /images/default-avatar.png"" alt="@user.Nick" />
+        <p style="margin-top: 10px; font-weight: bold;">@user.Nick</p>
+    </div>
+</div>

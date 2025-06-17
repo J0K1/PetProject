@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+using Microsoft.Identity.Client;
 using PetProject.Models;
 
 namespace PetProject.Services
@@ -9,7 +10,7 @@ namespace PetProject.Services
     {
         private List<UserEntity> _users = new List<UserEntity>()
         {
-            { new UserEntity {Id = Guid.NewGuid(), Login = "admin", Password = "admin", Email = "", Nick = "admin"} },
+            { new UserEntity {Id = Guid.NewGuid(), Login = "admin", Password = "admin", Email = "", Nick = "admin", Role = Enums.UserRole.Admin } },
             { new UserEntity {Id = Guid.NewGuid(), Login = "guest", Password = "guest", Email = "guest", Nick = "guest"} }
         };
 
@@ -30,6 +31,20 @@ namespace PetProject.Services
             return await _dbContext.Users.ToListAsync();
         }
 
+        public async Task<UserEntity?> GetUserAsync(string login, string password)
+        {   
+            return await _dbContext.Users
+                .FirstOrDefaultAsync(u => u.Login == login && u.Password == password);
+        }
+
+        public async Task<UserEntity?> GetUserWithDetailsByNickAsync(string nick)
+        {
+            return await _dbContext.Users
+                .Include(u => u.Friends)
+                .Include(u => u.Games)
+                .FirstOrDefaultAsync(u => u.Nick == nick);
+        }
+
         public async Task<List<UserEntity>> GetUsersByNickAsync(string nick)
         {
             return await _dbContext.Users
@@ -42,9 +57,9 @@ namespace PetProject.Services
             var user = await _dbContext.Users
                 .Where(u => u.Nick == nick)
                 .Include(u => u.Games)
-                .FirstOrDefaultAsync();
+                .FirstAsync();
 
-            return user?.Games;
+            return user.Games;
         }
 
         public async Task<List<UserEntity>> GetUserFriendsByNickAsync(string nick)
@@ -52,9 +67,9 @@ namespace PetProject.Services
             var user = await _dbContext.Users
                 .Where(u => u.Nick == nick)
                 .Include(u => u.Friends)
-                .FirstOrDefaultAsync();
+                .FirstAsync();
 
-            return user?.Friends;
+            return user.Friends;
         }
 
         public async Task AddNewUserAsync(UserEntity user)
@@ -63,32 +78,32 @@ namespace PetProject.Services
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task<bool> UpdatePasswordAsync(UserEntity user, string newPassword)
+        public async Task<bool> UpdatePasswordAsync(string login, string password, string newPassword)
         {
-            var dbUser = await _dbContext.Users.FirstAsync(u => u.Login == user.Login && u.Password == user.Password);
-            if (dbUser == null)
+            var user = await _dbContext.Users.FirstAsync(u => u.Login == login && u.Password == password);
+            if (user == null)
                 return false;
 
-            dbUser.Password = newPassword;
+            user.Password = newPassword;
             await _dbContext.SaveChangesAsync();
             return true;
         }
 
-        public async Task<bool> UpdateNickAsync(UserEntity user, string newNick)
+        public async Task<bool> UpdateNickAsync(string login, string password, string newNick)
         {
-            var dbUser = await _dbContext.Users.FirstAsync(u => u.Login == user.Login && u.Password == user.Password);
-            if (dbUser == null) 
+            var user = await _dbContext.Users.FirstAsync(u => u.Login == login && u.Password == password);
+            if (user == null) 
                 return false;
 
-            dbUser.Nick = newNick;
+            user.Nick = newNick;
             await _dbContext.SaveChangesAsync();
             return true;
         }
 
-        public async Task<bool> DeleteUserAsync(UserEntity user)
+        public async Task<bool> DeleteUserAsync(string login, string password)
         {
-            var dbUser = await _dbContext.Users.FirstAsync(u => u.Login == user.Login && u.Password == user.Password);
-            if (dbUser == null)
+            var user = await _dbContext.Users.FirstAsync(u => u.Login == login && u.Password == password);
+            if (user == null)
                 return false;
 
             _dbContext.Users.Remove(user);
@@ -98,11 +113,11 @@ namespace PetProject.Services
 
         public async Task<bool> BanUserByNickAsync(string nick)
         {
-            var dbUser = await _dbContext.Users.FirstAsync(u => u.Nick == nick);
-            if(dbUser == null) 
+            var user = await _dbContext.Users.FirstAsync(u => u.Nick == nick);
+            if(user == null) 
                 return false;
 
-            dbUser.IsBanned = true;
+            user.IsBanned = true;
             await _dbContext.SaveChangesAsync();
             return true;
         }
