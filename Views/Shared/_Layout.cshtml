@@ -3,28 +3,40 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] – PetProject</title>
-
-    <!-- CSS из wwwroot/css/site.css -->
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-
-    <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <header>
         <nav class="navbar-nav">
-            <a asp-controller="Pages" asp-action="Store">Магазин</a>
-            <a asp-controller="Pages" asp-action="Register">Регистрация</a>
-        </nav>
-        <nav>
-            <a asp-controller="Pages" asp-action="Login" class="login-button">Войти</a>
+            <a asp-controller="Store" asp-action="Index">Store</a>
+
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a asp-controller="Library" asp-action="Index">Library</a>
+
+                <a asp-controller="Profile"
+                   asp-action="Profile"
+                   asp-route-nick="@User.Identity.Name">
+                   Profile (@User.Identity.Name)
+                </a>
+
+                <form asp-controller="Auth" asp-action="Logout" method="post" style="display:inline">
+                    <button type="submit" class="login-button">Logout</button>
+                </form>
+            }
+            else
+            {
+                <a asp-controller="Auth" asp-action="Login" class="login-button">Login</a>
+            }
         </nav>
     </header>
 
     <main>
         @RenderBody()
     </main>
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>

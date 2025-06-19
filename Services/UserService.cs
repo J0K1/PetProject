@@ -55,11 +55,10 @@ namespace PetProject.Services
         public async Task<List<GameEntity>> GetUserGamesByNickAsync(string nick)
         {
             var user = await _dbContext.Users
-                .Where(u => u.Nick == nick)
                 .Include(u => u.Games)
-                .FirstAsync();
+                .FirstOrDefaultAsync(u => u.Nick == nick);
 
-            return user.Games;
+            return user?.Games.ToList() ?? new List<GameEntity>();
         }
 
         public async Task<List<UserEntity>> GetUserFriendsByNickAsync(string nick)
@@ -72,10 +71,14 @@ namespace PetProject.Services
             return user.Friends;
         }
 
-        public async Task AddNewUserAsync(UserEntity user)
+        public async Task<bool> AddNewUserAsync(UserEntity user)
         {
+            if (_dbContext.Users.Any(g => g == user))
+                return false;
+            
             await _dbContext.Users.AddAsync(user);
             await _dbContext.SaveChangesAsync();
+            return true;
         }
 
         public async Task<bool> UpdatePasswordAsync(string login, string password, string newPassword)

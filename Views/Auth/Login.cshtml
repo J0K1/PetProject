@@ -1,26 +1,26 @@
 ﻿@model PetProject.Models.Views.LoginViewModel
 @{
-    ViewData["Title"] = "Вход";
+    ViewData["Title"] = "Log in";
 }
 
 <div class="auth-container">
-    <h1>Войти</h1>
+    <h1>Log in</h1>
     <form asp-action="Login" method="post" class="auth-form">
-        <label>Логин</label>
+        <label>Login</label>
         <input asp-for="Login" />
         <span asp-validation-for="Login" class="text-error"></span>
 
-        <label>Пароль</label>
+        <label>Password</label>
         <input asp-for="Password" type="password" />
         <span asp-validation-for="Password" class="text-error"></span>
 
         <div class="form-footer-link" style="margin-top: 20px; text-align: center;">
-            <button type="submit" class="btn-play">Войти</button>
+            <button type="submit" class="btn-play">Log in</button>
         </div>
     </form>
 
     <div class="form-footer-link" style="margin-top: 20px; text-align: center;">
-        Нет аккаунта? <a asp-controller="Pages" asp-action="Register">Зарегистрироваться</a>
+        Don't have an account? <a asp-controller="Auth" asp-action="Register">Sign up</a>
     </div>
 </div>
 

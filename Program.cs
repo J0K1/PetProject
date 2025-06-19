@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using PetProject.Extensions;
 using Scalar.AspNetCore;
 
@@ -8,10 +9,17 @@ builder.Logging.AddConsole();
 
 builder.Services.AddAppServices(builder.Configuration);
 
+builder.Services
+    .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Auth/Login";
+        options.LogoutPath = "/Auth/Logout";
+        options.ExpireTimeSpan = TimeSpan.FromDays(7);
+    });
+
 builder.Services.AddControllersWithViews()
                 .AddRazorRuntimeCompilation();
-
-builder.Services.AddControllersWithViews();
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
@@ -30,14 +38,18 @@ if (app.Environment.IsDevelopment())
 
 app.UseStaticFiles();
 app.UseRouting();
-//app.UseCors("AllowAll");
+
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.UseSession();
+
+app.UseHttpsRedirection();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Pages}/{action=Store}/{id?}");
+    pattern: "{controller=Store}/{action=Index}/{id?}");
 
-app.UseHttpsRedirection();
 app.MapControllers();
 
 app.Run();

@@ -1,6 +1,6 @@
 ﻿@model PetProject.Models.UserEntity
 @{
-    ViewData["Title"] = "Профиль";
+    ViewData["Title"] = "Profile";
     var user = Model;
 }
 
@@ -21,6 +21,7 @@
         height: 120px;
         object-fit: cover;
         background-color: #ddd;
+        border-radius: 10px;
     }
 
     .clickable {
@@ -41,7 +42,7 @@
 
 <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
     <div>
-        <h1>Профиль</h1>
+        <h1>Profile</h1>
 
         <h2>@user.Nick </h2>
 
@@ -50,21 +51,21 @@
             <p style="color: red; font-weight: bold;">Banned</p>
         }
 
-        <h3>Друзья</h3>
+        <h3>Friends</h3>
         <div class="friends-list">
             @foreach (var friend in user.Friends)
             {
-                <a asp-action="Profile" asp-controller="Pages" asp-route-nick="@friend.Nick" title="@friend.Nick" class="clickable">
+                <a asp-action="Profile" asp-controller="Profile" asp-route-nick="@friend.Nick" title="@friend.Nick" class="clickable">
                     <img class="avatar" src="@friend.PhotoUrl ?? " /images/default-avatar.png"" alt="@friend.Nick" />
                 </a>
             }
         </div>
 
-        <h3 style="margin-top: 30px;">Игры</h3>
+        <h3 style="margin-top: 30px;">Games</h3>
         <div class="games-list">
             @foreach (var game in user.Games)
             {
-                <a asp-action="GameDetails" asp-controller="Pages" asp-route-id="@game.Id" title="@game.Title" class="clickable">
+                <a asp-action="GameDetails" asp-controller="Store" asp-route-id="@game.Id" title="@game.Title" class="clickable">
                     <img class="game-cover" src="@game.ImageUrl ?? " /images/default-game.png"" alt="@game.Title" />
                 </a>
             }

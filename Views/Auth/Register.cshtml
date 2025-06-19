@@ -1,30 +1,30 @@
 ﻿@model PetProject.Models.Views.RegisterViewModel
 @{
-    ViewData["Title"] = "Регистрация";
+    ViewData["Title"] = "Registration";
 }
 
 <div class="auth-container">
-    <h1>Регистрация</h1>
+    <h1>Registration</h1>
     <form asp-action="Register" method="post" class="auth-form">
-        <label>Логин</label>
+        <label>Username</label>
         <input asp-for="Login" />
         <span asp-validation-for="Login" class="text-error"></span>
 
-        <label>Пароль</label>
+        <label>Password</label>
         <input asp-for="Password" type="password" />
         <span asp-validation-for="Password" class="text-error"></span>
 
-        <label>Ник</label>
+        <label>Nickname</label>
         <input asp-for="Nick" />
         <span asp-validation-for="Nick" class="text-error"></span>
 
         <div class="form-footer-link" style="margin-top: 20px; text-align: center;">
-            <button type="submit" class="btn-play">Зарегистрироваться</button>
+            <button type="submit" class="btn-play">Register</button>
         </div>
     </form>
 
     <div class="form-footer-link" style="margin-top: 20px; text-align: center;">
-        Уже есть аккаунт? <a asp-controller="Pages" asp-action="Login">Войти</a>
+        Already have an account? <a asp-controller="Auth" asp-action="Login">Sign In</a>
     </div>
 </div>
 

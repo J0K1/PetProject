@@ -8,15 +8,24 @@
 
     <!-- Hero Section -->
     <section class="game-hero">
-        
         <div class="hero-info">
+            <div class="game-img">
+                <img src="@Model.ImageUrl"/>
+            </div>
             <h1 class="hero-title">@Model.Title</h1>
             <div class="hero-meta">
                 <span class="hero-genre">@Model.Genre</span>
                 <span class="hero-year">@Model.Year</span>
             </div>
             <div class="hero-price">$@Model.Price</div>
-            <button class="btn-play">Добавить в корзину</button>
+            
+            <form asp-controller="Library"
+                  asp-action="AddGame"
+                  method="post"
+                  class="buy-form">
+                <input type="hidden" name="gameId" value="@Model.Id" />
+                <button type="submit" class="btn-play">Купить</button>
+            </form>
         </div>
     </section>
 
@@ -40,14 +49,6 @@
             <li>GPU: Nvidia GTX 1060 / AMD RX 580</li>
             <li>Storage: 20 GB свободного места</li>
         </ul>
-    </section>
-
-    <!-- Related Games (заглушка) -->
-    <section class="game-related">
-        <h2>Похожие игры</h2>
-        <div class="related-list">
-            <p>Здесь будут ваши рекомендованные игры…</p>
-        </div>
     </section>
 
 </main>

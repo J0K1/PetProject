@@ -456,7 +456,6 @@ E:\ASP\PetProject\obj\Debug\net9.0\PetProject.sourcelink.json
 E:\ASP\PetProject\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 E:\ASP\PetProject\obj\Debug\net9.0\scopedcss\bundle\PetProject.styles.css
 E:\ASP\PetProject\obj\Debug\net9.0\scopedcss\projectbundle\PetProject.bundle.scp.css
-E:\ASP\PetProject\obj\Debug\net9.0\compressed\ub2itt52s4-dlvbokkx6o.gz
 E:\ASP\PetProject\obj\Debug\net9.0\compressed\y6bvee3u8l-61n19gt1b8.gz
 E:\ASP\PetProject\obj\Debug\net9.0\compressed\6dozrye4x7-xtxxf3hu2r.gz
 E:\ASP\PetProject\obj\Debug\net9.0\compressed\l8ol9ttwe2-bqjiyaj88i.gz
@@ -531,3 +530,5 @@ E:\ASP\PetProject\obj\Debug\net9.0\PetProject.pdb
 E:\ASP\PetProject\obj\Debug\net9.0\PetProject.genruntimeconfig.cache
 E:\ASP\PetProject\obj\Debug\net9.0\ref\PetProject.dll
 E:\ASP\PetProject\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+E:\ASP\PetProject\bin\Debug\net9.0\Models\json\games.json
+E:\ASP\PetProject\obj\Debug\net9.0\compressed\ub2itt52s4-dwwpr5zjmi.gz

@@ -103,20 +103,24 @@ h1 {
         box-shadow: 0 6px 20px rgba(0,0,0,0.7);
     }
 
-/* Обложка */
+/* Контейнер обложки */
 .game-cover {
     width: 100%;
-    height: 140px;
+    height: auto;
     background-color: #2a2a2a;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* чтобы ничего не вылезало */
 }
 
+    /* Само изображение */
     .game-cover img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        max-height: 100%;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        object-fit: contain;
     }
 
 /* Тело карточки */
@@ -131,9 +135,25 @@ h1 {
 .game-title {
     font-size: 1.1rem;
     color: #fff;
-    margin: 0 0 0.5rem;
+    align-items: center;
     line-height: 1.2;
 }
+
+/* Контейнер для изображения */
+.game-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+    /* Само изображение внутри контейнера */
+    .game-img img {
+        width: 100%;
+        height: auto;
+        display: block; /* Убирает лишние отступы */
+        object-fit: cover; /* Заполняет контейнер без искажений (может обрезать) */
+    }
 
 /* Ряд с тегами и ценой */
 .game-meta {
@@ -191,16 +211,21 @@ h1 {
     box-shadow: 0 8px 30px rgba(0,0,0,0.7);
 }
 
-.hero-cover img {
+.hero-cover {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2a;
+    overflow: hidden;
 }
 
 .hero-info {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    width: 100%; /* Добавьте это */
 }
 
 .hero-title {
@@ -379,4 +404,201 @@ h1 {
 
         .auth-link a:hover {
             text-decoration: underline;
+        }
+
+/* === Library Page === */
+.library-page {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.library-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+/* Список игр */
+.library-list {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+    .library-list h2 {
+        color: #fff;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .library-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+.library-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    .library-item:hover {
+        background-color: #2a2a2a;
+    }
+
+    .library-item.active {
+        background-color: #00ffcc33;
+    }
+
+.item-thumb {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.item-title {
+    color: #ccc;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Детали игры */
+.library-detail {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.detail-card {
+    text-align: center;
+    max-width: 400px;
+}
+
+.detail-img {
+    width: 100%;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+    .detail-img img {
+        width: 100%;
+        display: block;
+        object-fit: contain;
+    }
+
+.detail-title {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.detail-meta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.detail-genre,
+.detail-year {
+    background-color: #333;
+    padding: 0.3rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.btn-play {
+    background-color: #00ffcc;
+    color: #000;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    .btn-play:hover {
+        background-color: #00e6b8;
+    }
+
+/* Responsive для мобильных */
+@media (max-width: 768px) {
+    .library-container {
+        grid-template-columns: 1fr;
+    }
+
+    .library-detail {
+        margin-top: 2rem;
+    }
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.store-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 100%;
+    justify-content: center;
+}
+
+    .store-filters input,
+    .store-filters select,
+    .store-filters button {
+        background-color: #2a2a2a;
+        color: #f5f5f5;
+        border: 1px solid #333;
+        border-radius: 8px;
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
+        transition: border-color 0.2s ease, background-color 0.2s ease;
+    }
+
+        .store-filters input:focus,
+        .store-filters select:focus {
+            outline: none;
+            border-color: #00ffcc;
+            background-color: #2f2f2f;
+        }
+
+    .store-filters button {
+        background-color: #00ffcc;
+        color: #000;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+    }
+
+        .store-filters button:hover {
+            background-color: #00e6b8;
         }

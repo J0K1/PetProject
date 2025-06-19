@@ -1,62 +1,68 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using PetProject.Models;
 
 namespace PetProject.Services
 {
     public class GameService
     {
-        private List<GameEntity> gamesList = new()
-        {
-            new GameEntity { Id = 1, Title = "The Witcher 3", Genre = "RPG", Year = 2015 },
-            new GameEntity { Id = 2, Title = "Cyberpunk 2077", Genre = "RPG", Year = 2020 },
-            new GameEntity { Id = 3, Title = "Red Dead Redemption 2", Genre = "Action-Adventure", Year = 2018 },
-            new GameEntity { Id = 4, Title = "Elden Ring", Genre = "Action RPG", Year = 2022 },
-            new GameEntity { Id = 5, Title = "God of War", Genre = "Action", Year = 2018 },
-            new GameEntity { Id = 6, Title = "Minecraft", Genre = "Sandbox", Year = 2011 },
-            new GameEntity { Id = 7, Title = "Hollow Knight", Genre = "Metroidvania", Year = 2017 },
-            new GameEntity { Id = 8, Title = "Stardew Valley", Genre = "Simulation", Year = 2016 },
-            new GameEntity { Id = 9, Title = "Portal 2", Genre = "Puzzle", Year = 2011 },
-            new GameEntity { Id = 10, Title = "DOOM Eternal", Genre = "Shooter", Year = 2020 }
-        };
-
         private readonly AppDBContext _dbContext;
 
         public GameService(AppDBContext context)
-        {
-            _dbContext = context;
-        }
+            => _dbContext = context;
 
         public async Task AddGamesAsync()
         {
-            await _dbContext.Games.AddRangeAsync(gamesList);
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Models", "json", "games.json");
+            var json = await File.ReadAllTextAsync(filePath);
+            if (string.IsNullOrWhiteSpace(json)) return;
+
+            var games = JsonConvert.DeserializeObject<List<GameEntity>>(json);
+            if (games == null || games.Count == 0) return;
+
+            _dbContext.Games.RemoveRange(_dbContext.Games);
+            await _dbContext.Games.AddRangeAsync(games);
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task<List<GameEntity>> GetAllAsync()
+        public async Task<List<GameEntity>> GetAllAsync(int? year = null, string genre = null)
         {
-            return await _dbContext.Games
-                .OrderBy(g => g.Id)
+            var query = _dbContext.Games.AsQueryable();
+
+            if(!year.HasValue && string.IsNullOrWhiteSpace(genre))
+                return await _dbContext.Games.ToListAsync();
+
+            if (year.HasValue)
+                query = query.Where(g => g.Year == year.Value);
+
+            if (!string.IsNullOrWhiteSpace(genre))
+            {
+                var lower = genre.Trim().ToLower();
+                query = query.Where(g => g.Genre.ToLower().Contains(lower));
+            }
+
+            return await query
+                .OrderBy(g => g.Title)
                 .ToListAsync();
         }
 
-        public async Task<GameEntity?> GetByIdAsync(int id)
-        {
-            return await _dbContext.Games.FindAsync(id);
-        }
+        public Task<GameEntity?> GetByIdAsync(int id)
+            => _dbContext.Games.FindAsync(id).AsTask();
 
         public async Task<List<GameEntity>> GetByTitleAsync(string title)
         {
+            var lower = title.Trim().ToLower();
             return await _dbContext.Games
-                .Where(g => g.Title.ToLower().Contains(title.ToLower()))
+                .Where(g => g.Title.ToLower().Contains(lower))
+                .OrderBy(g => g.Title)
                 .ToListAsync();
         }
 
         public async Task<List<GameEntity>> GetByYearAsync(int year)
-        {
-            return await _dbContext.Games
+            => await _dbContext.Games
                 .Where(g => g.Year == year)
+                .OrderBy(g => g.Title)
                 .ToListAsync();
-        }
 
         public async Task AddAsync(GameEntity game)
         {
@@ -66,25 +72,38 @@ namespace PetProject.Services
 
         public async Task<bool> UpdateAsync(int id, GameEntity updated)
         {
-            var game = await _dbContext.Games.FindAsync(id);
-            if (game == null)
-                return false;
-            game.Title = updated.Title;
-            game.Genre = updated.Genre;
-            game.Year = updated.Year;
+            var existing = await _dbContext.Games.FindAsync(id);
+            if (existing == null) return false;
+
+            existing.Title = updated.Title;
+            existing.Genre = updated.Genre;
+            existing.Year = updated.Year;
+            existing.Price = updated.Price;
+            existing.ImageUrl = updated.ImageUrl;
 
             await _dbContext.SaveChangesAsync();
-            return true;        
+            return true;
         }
 
         public async Task<bool> DeleteAsync(int id)
         {
-            var game = await _dbContext.Games.FindAsync(id);
-            if (game == null) return false;
+            var existing = await _dbContext.Games.FindAsync(id);
+            if (existing == null) return false;
 
-            _dbContext.Games.Remove(game);
+            _dbContext.Games.Remove(existing);
             await _dbContext.SaveChangesAsync();
             return true;
+        }
+
+        public async Task DeleteAllGamesAsync()
+        {
+            _dbContext.Games.RemoveRange(_dbContext.Games);
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task<List<string>> GetAllGenresAsync()
+        {
+            return await _dbContext.Games.Select(g => g.Genre).Distinct().ToListAsync();
         }
     }
 }
