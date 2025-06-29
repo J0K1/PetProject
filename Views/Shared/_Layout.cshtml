@@ -10,26 +10,44 @@
 <body>
     <header>
         <nav class="navbar-nav">
-            <a asp-controller="Store" asp-action="Index">Store</a>
+            <div class="nav-left">
+                <a asp-controller="Store" asp-action="Index">Store</a>
+                <a asp-controller="Unity" asp-action="Index">Unity</a>
 
-            @if (User.Identity.IsAuthenticated)
-            {
-                <a asp-controller="Library" asp-action="Index">Library</a>
+                @if (User is not null && User.Identity.IsAuthenticated)
+                {
+                    <a asp-controller="Library" asp-action="Index">Library</a>
 
-                <a asp-controller="Profile"
-                   asp-action="Profile"
-                   asp-route-nick="@User.Identity.Name">
-                   Profile (@User.Identity.Name)
-                </a>
+                    <a asp-controller="Steam" asp-action="Index">Steam</a>
 
-                <form asp-controller="Auth" asp-action="Logout" method="post" style="display:inline">
-                    <button type="submit" class="login-button">Logout</button>
-                </form>
-            }
-            else
-            {
-                <a asp-controller="Auth" asp-action="Login" class="login-button">Login</a>
-            }
+                    bool isAdmin = User.IsInRole(PetProject.Enums.UserRole.Admin.ToString());
+                    bool isBanned = User.HasClaim(c => c.Type == "IsBanned" && c.Value == "true");
+
+                    string nickClass = "";
+                    if (isAdmin)
+                        nickClass = "admin-nick";
+                    else if (isBanned)
+                        nickClass = "banned-nick";
+
+
+                    <a asp-controller="Profile" asp-action="Index">
+                        Profile (<span class="@nickClass">@User.Identity.Name</span>)
+                    </a>
+                }
+            </div>
+
+            <div class="nav-right">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <form asp-controller="Auth" asp-action="Logout" method="post" style="display:inline">
+                        <button type="submit" class="login-button">Logout</button>
+                    </form>
+                }
+                else
+                {
+                    <a asp-controller="Auth" asp-action="Login" class="login-button">Login</a>
+                }
+            </div>
         </nav>
     </header>
 

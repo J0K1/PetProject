@@ -531,4 +531,9 @@ E:\ASP\PetProject\obj\Debug\net9.0\PetProject.genruntimeconfig.cache
 E:\ASP\PetProject\obj\Debug\net9.0\ref\PetProject.dll
 E:\ASP\PetProject\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 E:\ASP\PetProject\bin\Debug\net9.0\Models\json\games.json
-E:\ASP\PetProject\obj\Debug\net9.0\compressed\ub2itt52s4-dwwpr5zjmi.gz
+E:\ASP\PetProject\bin\Debug\net9.0\AutoMapper.dll
+E:\ASP\PetProject\bin\Debug\net9.0\Steam.Models.dll
+E:\ASP\PetProject\bin\Debug\net9.0\SteamWebAPI2.dll
+E:\ASP\PetProject\bin\Debug\net9.0\Polly.dll
+E:\ASP\PetProject\bin\Debug\net9.0\Polly.Extensions.Http.dll
+E:\ASP\PetProject\obj\Debug\net9.0\compressed\ub2itt52s4-t4440q02g1.gz

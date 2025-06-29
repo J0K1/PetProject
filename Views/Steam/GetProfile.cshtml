@@ -1,0 +1,91 @@
+﻿@model PetProject.Models.Steam.SteamPlayerEntity
+@{
+    var p = Model;
+    ViewData["Title"] = $"{p.PersonaName}";
+}
+
+<div class="steam-profile-wrapper">
+    <div class="steam-profile-container">
+        <h1>Steam Profile: @p.PersonaName</h1>
+
+        <div class="avatars-wrapper">
+            <div>
+                <img class="avatar" src="@p.Avatar" alt="Small" width="50" height="50" />
+                <div>Small</div>
+            </div>
+            <div>
+                <img class="avatar" src="@p.AvatarMedium" alt="Medium" width="100" height="100" />
+                <div>Medium</div>
+            </div>
+            <div>
+                <img class="avatar" src="@p.AvatarFull" alt="Full" width="150" height="150" />
+                <div>Full</div>
+            </div>
+        </div>
+
+        <div class="profile-details">
+            <div class="detail-row"><strong>SteamID:</strong> @p.SteamId</div>
+            <div class="detail-row"><strong>Profile URL:</strong> <a href="@p.ProfileUrl" target="_blank">@p.ProfileUrl</a></div>
+            <div class="detail-row"><strong>Persona Name:</strong> @p.PersonaName</div>
+            <div class="detail-row">
+                <strong>Persona State:</strong>
+                @{
+                    string stateText = p.PersonaState switch
+                    {
+                        0 => "Offline",
+                        1 => "Online",
+                        2 => "Busy",
+                        3 => "Away",
+                        4 => "Snooze",
+                        5 => "Looking to Trade",
+                        6 => "Looking to Play",
+                        _ => "Unknown"
+                    };
+                }
+                @stateText
+            </div>
+            <div class="detail-row">
+                <strong>Visibility State:</strong>
+                @{
+                    string visibilityText = p.CommunityVisibilityState switch
+                    {
+                        1 => "Private",
+                        2 => "Friends Only",
+                        3 => "Public",
+                        _ => "Unknown"
+                    };
+                }
+                @visibilityText
+            </div>
+            <div class="detail-row">
+                <strong>Profile State:</strong>
+                @{
+                    string profileStateText = p.ProfileState switch
+                    {
+                        1 => "Private",
+                        2 => "Friends Only",
+                        3 => "Public",
+                        _ => "Unknown"
+                    };
+                }
+                @profileStateText
+            </div>
+            <div class="detail-row"><strong>Last Logoff:</strong> @(DateTimeOffset.FromUnixTimeSeconds(p.LastLogoff).ToLocalTime().ToString("G"))</div>
+            <div class="detail-row"><strong>Account Created:</strong> @(DateTimeOffset.FromUnixTimeSeconds(p.TimeCreated).ToLocalTime().ToString("G"))</div>
+            <div class="detail-row"><strong>Comment Permission:</strong> @(p.CommentPermission == 1 ? "Allowed" : "Denied")</div>
+            <div class="detail-row"><strong>Primary Clan ID:</strong> @p.PrimaryClanId</div>
+            <div class="detail-row"><strong>Persona State Flags:</strong> @p.PersonaStateFlags</div>
+
+            <form method="get" onsubmit="event.preventDefault();
+                var id = document.getElementById('id').value;
+                if(id) {
+                    window.location.href = '/Steam/GetProfile/' + encodeURIComponent(id);
+                }"> 
+                <input type="text" name="id" id="id" placeholder="Введите Steam ID" class="form-control" required />
+                <button type="submit">Поиск</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+

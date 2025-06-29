@@ -142,10 +142,57 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "PetProject.Controllers.SteamController",
+    "Method": "Index",
+    "RelativePath": "Steam",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetProject.Controllers.SteamController",
+    "Method": "GetAchievements",
+    "RelativePath": "Steam/GetAchievements/{steamId}/{appId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "steamId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "appId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetProject.Controllers.SteamController",
+    "Method": "GetProfile",
+    "RelativePath": "Steam/GetProfile/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PetProject.Controllers.UserController",
     "Method": "AddFriendToUser",
     "RelativePath": "User/AddFriendToUser",
-    "HttpMethod": "PUT",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [

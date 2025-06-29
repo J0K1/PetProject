@@ -84,9 +84,17 @@
               "target": "Package",
               "version": "[9.0.4, )"
             },
+            "Polly.Extensions.Http": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Scalar.AspNetCore": {
               "target": "Package",
               "version": "[2.4.16, )"
+            },
+            "SteamWebAPI2": {
+              "target": "Package",
+              "version": "[4.4.1, )"
             }
           },
           "imports": [

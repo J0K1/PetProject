@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "AutoMapper/12.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -1016,7 +1032,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -1846,6 +1862,35 @@
           }
         }
       },
+      "Polly/7.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Polly.Extensions.Http/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Polly": "7.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Scalar.AspNetCore/2.4.16": {
         "type": "package",
         "compile": {
@@ -1861,6 +1906,23 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "SteamWebAPI2/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "automapper": "12.0.0",
+          "newtonsoft.json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Steam.Models.dll": {},
+          "lib/netstandard2.1/SteamWebAPI2.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Steam.Models.dll": {},
+          "lib/netstandard2.1/SteamWebAPI2.dll": {}
+        }
       },
       "System.Buffers/4.6.0": {
         "type": "package",
@@ -2540,6 +2602,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/12.0.0": {
+      "sha512": "0Rmg0zI5AFu1O/y//o9VGyhxKjhggWpk9mOA1tp0DEVx40c61bs+lnQv+0jUq8XbniF7FKgIVvI1perqiMtLrA==",
+      "type": "package",
+      "path": "automapper/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.12.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.dll",
+        "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.38.0": {
       "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
@@ -4041,10 +4118,10 @@
         "microsoft.codeanalysis.workspaces.msbuild.nuspec"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4057,6 +4134,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -4066,7 +4144,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -5237,6 +5315,36 @@
         "postgresql.png"
       ]
     },
+    "Polly/7.1.0": {
+      "sha512": "mpQsvlEn4ipgICh5CGyVLPV93RFVzOrBG7wPZfzY8gExh7XgWQn0GCDY9nudbUEJ12UiGPP9i4+CohghBvzhmg==",
+      "type": "package",
+      "path": "polly/7.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.xml",
+        "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.xml",
+        "polly.7.1.0.nupkg.sha512",
+        "polly.nuspec"
+      ]
+    },
+    "Polly.Extensions.Http/3.0.0": {
+      "sha512": "drrG+hB3pYFY7w1c3BD+lSGYvH2oIclH8GRSehgfyP5kjnFnHKQuuBhuHLv+PWyFuaTDyk/vfRpnxOzd11+J8g==",
+      "type": "package",
+      "path": "polly.extensions.http/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/Polly.Extensions.Http.dll",
+        "lib/netstandard1.1/Polly.Extensions.Http.xml",
+        "lib/netstandard2.0/Polly.Extensions.Http.dll",
+        "lib/netstandard2.0/Polly.Extensions.Http.xml",
+        "polly.extensions.http.3.0.0.nupkg.sha512",
+        "polly.extensions.http.nuspec"
+      ]
+    },
     "Scalar.AspNetCore/2.4.16": {
       "sha512": "8CcEuocl5/CpNs/mVf6OkzdNIVg7NzKdpZDqQZknJU7UI9Pklt7WeRl4p7/+blnI/RNM6mGFlzIFQUQ4j80FcA==",
       "type": "package",
@@ -5252,6 +5360,21 @@
         "lib/net9.0/Scalar.AspNetCore.xml",
         "scalar.aspnetcore.2.4.16.nupkg.sha512",
         "scalar.aspnetcore.nuspec"
+      ]
+    },
+    "SteamWebAPI2/4.4.1": {
+      "sha512": "hejID7bZsWT1HLqcCzbCUC2QftUYc25Mtz5tbZjhDFsbr6ra1qvVPZhAaL/ERxSaNWqiESrQXbQE1U7W7Ezmrg==",
+      "type": "package",
+      "path": "steamwebapi2/4.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Steam.Models.dll",
+        "lib/netstandard2.0/SteamWebAPI2.dll",
+        "lib/netstandard2.1/Steam.Models.dll",
+        "lib/netstandard2.1/SteamWebAPI2.dll",
+        "steamwebapi2.4.4.1.nupkg.sha512",
+        "steamwebapi2.nuspec"
       ]
     },
     "System.Buffers/4.6.0": {
@@ -6622,7 +6745,9 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.6",
       "Newtonsoft.Json >= 13.0.3",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
-      "Scalar.AspNetCore >= 2.4.16"
+      "Polly.Extensions.Http >= 3.0.0",
+      "Scalar.AspNetCore >= 2.4.16",
+      "SteamWebAPI2 >= 4.4.1"
     ]
   },
   "packageFolders": {
@@ -6709,9 +6834,17 @@
             "target": "Package",
             "version": "[9.0.4, )"
           },
+          "Polly.Extensions.Http": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Scalar.AspNetCore": {
             "target": "Package",
             "version": "[2.4.16, )"
+          },
+          "SteamWebAPI2": {
+            "target": "Package",
+            "version": "[4.4.1, )"
           }
         },
         "imports": [

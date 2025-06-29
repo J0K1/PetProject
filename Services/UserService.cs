@@ -127,16 +127,26 @@ namespace PetProject.Services
 
         public async Task<bool> AddFriendToUserAsync(string userNick, string friendNick)
         {
-            var user = await _dbContext.Users.FirstAsync(u => u.Nick == userNick);
+            var user = await _dbContext.Users
+                .Include(u => u.Friends)
+                .FirstOrDefaultAsync(u => u.Nick == userNick);
+
             if (user == null)
                 return false;
 
-            var friend = await _dbContext.Users.FirstAsync(u => u.Nick == friendNick);
-            if (friend == null)
+            var friend = await _dbContext.Users
+                .Include(u => u.Friends)
+                .FirstOrDefaultAsync(u => u.Nick == friendNick);
+
+            if (friend == null || user.Id == friend.Id)
                 return false;
 
-            user.Friends.Add(friend);
-            friend.Friends.Add(user);
+            if (!user.Friends.Any(f => f.Id == friend.Id))
+                user.Friends.Add(friend);
+
+            if (!friend.Friends.Any(f => f.Id == user.Id))
+                friend.Friends.Add(user);
+
             await _dbContext.SaveChangesAsync();
             return true;
         }

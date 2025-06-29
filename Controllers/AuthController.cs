@@ -1,18 +1,13 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using PetProject.Models;
 using PetProject.Models.Views;
-
+using PetProject.Services;
+using System.Security.Claims;
 
 namespace PetProject.Controllers
 {
-    using Microsoft.AspNetCore.Authentication;
-    using Microsoft.AspNetCore.Authentication.Cookies;
-    using Microsoft.AspNetCore.Mvc;
-    using PetProject.Models;
-    using PetProject.Models.Views;
-    using PetProject.Services;
-    using System.Security.Claims;
 
     [Route("Auth")]
     public class AuthController : Controller
@@ -39,23 +34,19 @@ namespace PetProject.Controllers
                 return View(model);
             }
 
-            // создаём claims
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new Claim(ClaimTypes.Name, user.Nick),
-                new Claim("Role", user.Role.ToString()),
+                new Claim(ClaimTypes.Role, user.Role.ToString()),
+                new Claim("IsBanned", user.IsBanned ? "true" : "false")
             };
 
             var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var principal = new ClaimsPrincipal(identity);
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
-            // ставим cookie
-            await HttpContext.SignInAsync(
-                CookieAuthenticationDefaults.AuthenticationScheme,
-                principal);
-
-            return RedirectToAction("Index", "Library");
+            return RedirectToAction("Index", "Profile");
         }
 
         [HttpPost("Logout")]
@@ -74,7 +65,6 @@ namespace PetProject.Controllers
             if (!ModelState.IsValid)
                 return View(model);
 
-            // проверка существующего
             var all = await _userService.GetAllUsersAsync();
             if (all.Any(u => u.Login == model.Login))
             {
@@ -82,7 +72,6 @@ namespace PetProject.Controllers
                 return View(model);
             }
 
-            // создаём нового
             var entity = new UserEntity
             {
                 Login = model.Login,
@@ -95,15 +84,14 @@ namespace PetProject.Controllers
             {
                 new Claim(ClaimTypes.NameIdentifier, entity.Id.ToString()),
                 new Claim(ClaimTypes.Name, entity.Nick),
-                new Claim("Role", entity.Role.ToString()),
+                new Claim(ClaimTypes.Role, entity.Role.ToString()),
             };
 
             var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var principal = new ClaimsPrincipal(identity);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
-            return RedirectToAction("Index", "Library");
+            return RedirectToAction("Index", "Profile");
         }
     }
-
 }

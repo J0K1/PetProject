@@ -108,14 +108,14 @@ namespace PetProject.Controllers
                 return BadRequest(nick);
         }
 
-        [HttpPut("AddFriendToUser")]
+        [HttpPost("AddFriendToUser")]
         public async Task<ActionResult> AddFriendToUser(string userNick, string friendNick)
         {
             bool isConfirm = await _userService.AddFriendToUserAsync(userNick, friendNick);
-            if (isConfirm)
-                return Ok();
-            else
+            if (!isConfirm)
                 return BadRequest();
+            
+            return RedirectToAction("Index", "Profile", new { nick = friendNick });
         }
 
         [HttpPut("AddGameToUser")]

@@ -6,7 +6,7 @@ namespace PetProject.Extensions
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddAppServices(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddMyAppServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddControllers();
             services.AddOpenApi();

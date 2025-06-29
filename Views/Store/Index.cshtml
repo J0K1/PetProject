@@ -70,34 +70,52 @@
             }
         </select>
 
-        <select name="sortBy">
-            @if (Model.SortBy == "without")
-            {
-                <option value="without" selected="selected">Без сортировка</option>
-            }
-            else
-            {
-                <option value="without">Без сортировки</option>
-            }
-            @if (Model.SortBy == "title")
-            {
-                <option value="title" selected="selected">Сортировать по названию</option>
-            }
-            else
-            {
-                <option value="title">Сортировать по названию</option>
-            }
-            @if (Model.SortBy == "id")
-            {
-                <option value="id" selected="selected">Сортировать по ID</option>
-            }
-            else
-            {
-                <option value="id">Сортировать по ID</option>
-            }
-        </select>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <select name="sortBy">
+                @if (Model.SortBy == "without")
+                {
+                    <option value="without" selected="selected">Без сортировка</option>
+                }
+                else
+                {
+                    <option value="without">Без сортировки</option>
+                }
+                @if (Model.SortBy == "title")
+                {
+                    <option value="title" selected="selected">Сортировать по названию</option>
+                }
+                else
+                {
+                    <option value="title">Сортировать по названию</option>
+                }
+                @if (Model.SortBy == "id")
+                {
+                    <option value="id" selected="selected">Сортировать по ID</option>
+                }
+                else
+                {
+                    <option value="id">Сортировать по ID</option>
+                }
+            </select>
+        }
+        <button type="submit" class="filter-input">Применить</button>
+        <button type="button" class="filter-reset" onclick="resetFilters()">Сбросить</button>
 
-        <button type="submit">Применить</button>
+        <script>
+            function resetFilters() {
+                const form = document.querySelector('.store-filters');
+                // очистить все input/select в форме
+                form.querySelectorAll('input, select').forEach(el => {
+                    if (el.tagName.toLowerCase() === 'select') {
+                        el.selectedIndex = 0;  // выбираем первый option
+                    } else {
+                        el.value = '';
+                    }
+                });
+                form.submit();
+            }
+        </script>
     </form>
 </div>
 

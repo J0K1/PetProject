@@ -18,6 +18,6 @@ namespace PetProject.Models
         public List<UserEntity> Friends { get; set; } = new();
         public List<GameEntity> Games { get; set; } = new();
 
-        public string PhotoUrl { get; set; } = "https://imgpng.ru/download/87340";
+        public string PhotoUrl { get; set; } = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fthumbnails%2F036%2F280%2F651%2Fsmall_2x%2Fdefault-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg&f=1&nofb=1&ipt=f399372f42b355ef9bccdcd95ddaa04492a2d754be88eb00d250cf215aac73e9";
     }
 }

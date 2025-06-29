@@ -18,13 +18,7 @@ namespace PetProject.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
-        {
-            return RedirectToAction(nameof(Main));
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> Main(string? search, string? genre, int? year, 
+        public async Task<IActionResult> Index(string? search, string? genre, int? year, 
             decimal? priceFrom, decimal? priceTo, bool? purchased, string? sortBy)
         {
             var games = await _gameService.GetAllAsync();

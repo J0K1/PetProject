@@ -3,92 +3,152 @@
   "WorkspaceRootPath": "E:\\ASP\\PetProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\library\\library.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\library\\library.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\store\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\store\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\shared\\error404.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\shared\\error404.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\views\\storeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\views\\storeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\views\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\views\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\store\\gamedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\store\\gamedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\profile\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\profile\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\views\\libraryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\views\\libraryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\controllers\\steamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:controllers\\steamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\unity\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\unity\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\steam\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\steam\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\steam\\getprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\steam\\getprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\store\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\store\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\steam\\steamplayerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\steam\\steamplayerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\steam\\steamplayersummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\steam\\steamplayersummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\steam\\steamplayerachievementsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\steam\\steamplayerachievementsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\services\\steamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:services\\steamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\steam\\steamplayerachievemententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\steam\\steamplayerachievemententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\extensions\\steamextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:extensions\\steamextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\views\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\views\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\views\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\views\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\library\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\library\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\store\\gamedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:views\\store\\gamedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\views\\storeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\views\\storeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\models\\views\\libraryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|solutionrelative:models\\views\\libraryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject.csproj|e:\\asp\\petproject\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -110,123 +170,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 32,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StoreViewModel.cs",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\Views\\StoreViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\Views\\StoreViewModel.cs",
-              "ToolTip": "E:\\ASP\\PetProject\\Models\\Views\\StoreViewModel.cs",
-              "RelativeToolTip": "Models\\Views\\StoreViewModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ErrorController.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Controllers\\ErrorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ErrorController.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Controllers\\ErrorController.cs",
+              "RelativeToolTip": "Controllers\\ErrorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T19:14:14.958Z",
+              "WhenOpened": "2025-06-29T20:40:39.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LibraryController.cs",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Controllers\\LibraryController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LibraryController.cs",
-              "ToolTip": "E:\\ASP\\PetProject\\Controllers\\LibraryController.cs",
-              "RelativeToolTip": "Controllers\\LibraryController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAYwDsAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T18:21:46.516Z",
+              "DocumentIndex": 2,
+              "Title": "Error404.cshtml",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Shared\\Error404.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error404.cshtml",
+              "ToolTip": "E:\\ASP\\PetProject\\Views\\Shared\\Error404.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error404.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T20:39:46.35Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Services\\UserService.cs",
-              "ToolTip": "E:\\ASP\\PetProject\\Services\\UserService.cs",
-              "RelativeToolTip": "Services\\UserService.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAgwI4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T18:16:13.503Z",
+              "DocumentIndex": 3,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "E:\\ASP\\PetProject\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T20:39:28.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Unity\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Unity\\Index.cshtml",
+              "ToolTip": "E:\\ASP\\PetProject\\Views\\Unity\\Index.cshtml",
+              "RelativeToolTip": "Views\\Unity\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T20:21:50.389Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\ASP\\PetProject\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Title": "GetProfile.cshtml",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Steam\\GetProfile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Steam\\GetProfile.cshtml",
+              "ToolTip": "E:\\ASP\\PetProject\\Views\\Steam\\GetProfile.cshtml",
+              "RelativeToolTip": "Views\\Steam\\GetProfile.cshtml",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAYwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T22:41:27.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProfileController.cs",
-              "ToolTip": "E:\\ASP\\PetProject\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "Controllers\\ProfileController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwAYAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T17:38:04.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "E:\\ASP\\PetProject\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T18:51:07.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "LibraryViewModel.cs",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\Views\\LibraryViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\Views\\LibraryViewModel.cs",
-              "ToolTip": "E:\\ASP\\PetProject\\Models\\Views\\LibraryViewModel.cs",
-              "RelativeToolTip": "Models\\Views\\LibraryViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T18:29:47.663Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\Views\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\Views\\RegisterViewModel.cs",
-              "ToolTip": "E:\\ASP\\PetProject\\Models\\Views\\RegisterViewModel.cs",
-              "RelativeToolTip": "Models\\Views\\RegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T18:29:29.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Library.cshtml",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Library\\Library.cshtml",
-              "RelativeDocumentMoniker": "Views\\Library\\Library.cshtml",
-              "ToolTip": "E:\\ASP\\PetProject\\Views\\Library\\Library.cshtml",
-              "RelativeToolTip": "Views\\Library\\Library.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T18:25:49.329Z",
+              "WhenOpened": "2025-06-29T19:37:24.793Z",
               "EditorCaption": ""
             },
             {
@@ -235,46 +243,316 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Steam\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Steam\\Index.cshtml",
+              "ToolTip": "E:\\ASP\\PetProject\\Views\\Steam\\Index.cshtml",
+              "RelativeToolTip": "Views\\Steam\\Index.cshtml",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAYwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T19:13:37.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SteamPlayerEntity.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\Steam\\SteamPlayerEntity.cs",
+              "RelativeDocumentMoniker": "Models\\Steam\\SteamPlayerEntity.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Models\\Steam\\SteamPlayerEntity.cs",
+              "RelativeToolTip": "Models\\Steam\\SteamPlayerEntity.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAA4wDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T19:15:52.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SteamPlayerSummaryResponse.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\Steam\\SteamPlayerSummaryResponse.cs",
+              "RelativeDocumentMoniker": "Models\\Steam\\SteamPlayerSummaryResponse.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Models\\Steam\\SteamPlayerSummaryResponse.cs",
+              "RelativeToolTip": "Models\\Steam\\SteamPlayerSummaryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T19:14:46.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SteamController.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Controllers\\SteamController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SteamController.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Controllers\\SteamController.cs",
+              "RelativeToolTip": "Controllers\\SteamController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwBoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T18:45:35.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\ASP\\PetProject\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "E:\\ASP\\PetProject\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwCkAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T17:32:18.447Z",
+              "WhenOpened": "2025-06-29T18:58:04.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
+              "Title": "SteamPlayerAchievementEntity.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\Steam\\SteamPlayerAchievementEntity.cs",
+              "RelativeDocumentMoniker": "Models\\Steam\\SteamPlayerAchievementEntity.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Models\\Steam\\SteamPlayerAchievementEntity.cs",
+              "RelativeToolTip": "Models\\Steam\\SteamPlayerAchievementEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T19:40:27.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SteamPlayerAchievementsResponse.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\Steam\\SteamPlayerAchievementsResponse.cs",
+              "RelativeDocumentMoniker": "Models\\Steam\\SteamPlayerAchievementsResponse.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Models\\Steam\\SteamPlayerAchievementsResponse.cs",
+              "RelativeToolTip": "Models\\Steam\\SteamPlayerAchievementsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T19:40:25.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SteamService.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Services\\SteamService.cs",
+              "RelativeDocumentMoniker": "Services\\SteamService.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Services\\SteamService.cs",
+              "RelativeToolTip": "Services\\SteamService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwB8AAACVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T18:41:59.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GameController.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Controllers\\GameController.cs",
+              "RelativeToolTip": "Controllers\\GameController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAUwG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T21:54:16.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SteamExtensions.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Extensions\\SteamExtensions.cs",
+              "RelativeDocumentMoniker": "Extensions\\SteamExtensions.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Extensions\\SteamExtensions.cs",
+              "RelativeToolTip": "Extensions\\SteamExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T18:35:18.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:05:54.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\ASP\\PetProject\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-26T18:34:20.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Profile\\Index.cshtml",
+              "ToolTip": "E:\\ASP\\PetProject\\Views\\Profile\\Index.cshtml",
+              "RelativeToolTip": "Views\\Profile\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T21:45:55.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProfileController.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "Controllers\\ProfileController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:38:04.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\Views\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\Views\\ProfileViewModel.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Models\\Views\\ProfileViewModel.cs",
+              "RelativeToolTip": "Models\\Views\\ProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T18:44:51.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Library\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Library\\Index.cshtml",
+              "ToolTip": "E:\\ASP\\PetProject\\Views\\Library\\Index.cshtml",
+              "RelativeToolTip": "Views\\Library\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwCgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T18:25:49.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "StoreViewModel.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\Views\\StoreViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\Views\\StoreViewModel.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Models\\Views\\StoreViewModel.cs",
+              "RelativeToolTip": "Models\\Views\\StoreViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T19:14:14.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LibraryController.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Controllers\\LibraryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LibraryController.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Controllers\\LibraryController.cs",
+              "RelativeToolTip": "Controllers\\LibraryController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:21:46.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAowD0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:16:13.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\ASP\\PetProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T22:41:27.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAIBJwHUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:51:07.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LibraryViewModel.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\Views\\LibraryViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\Views\\LibraryViewModel.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Models\\Views\\LibraryViewModel.cs",
+              "RelativeToolTip": "Models\\Views\\LibraryViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:29:47.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\Views\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\Views\\RegisterViewModel.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\Models\\Views\\RegisterViewModel.cs",
+              "RelativeToolTip": "Models\\Views\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:29:29.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "site.css",
               "DocumentMoniker": "E:\\ASP\\PetProject\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "E:\\ASP\\PetProject\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAADkCAAAAAAAAAAAwwFwCAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-06-18T22:04:56.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 32,
               "Title": "StoreController.cs",
               "DocumentMoniker": "E:\\ASP\\PetProject\\Controllers\\StoreController.cs",
               "RelativeDocumentMoniker": "Controllers\\StoreController.cs",
               "ToolTip": "E:\\ASP\\PetProject\\Controllers\\StoreController.cs",
               "RelativeToolTip": "Controllers\\StoreController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwC4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:35:14.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:35:14.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 25,
               "Title": "GameService.cs",
               "DocumentMoniker": "E:\\ASP\\PetProject\\Services\\GameService.cs",
               "RelativeDocumentMoniker": "Services\\GameService.cs",
@@ -282,51 +560,36 @@
               "RelativeToolTip": "Services\\GameService.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAqwGkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T21:42:32.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T21:42:32.776Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\ASP\\PetProject\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\ASP\\PetProject\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAYwAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T21:39:42.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 34,
               "Title": "GameDetails.cshtml",
               "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Store\\GameDetails.cshtml",
               "RelativeDocumentMoniker": "Views\\Store\\GameDetails.cshtml",
               "ToolTip": "E:\\ASP\\PetProject\\Views\\Store\\GameDetails.cshtml",
               "RelativeToolTip": "Views\\Store\\GameDetails.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBsAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T22:00:13.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T22:00:13.426Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ServiceCollectionExtensions.cs",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Extensions\\ServiceCollectionExtensions.cs",
-              "RelativeDocumentMoniker": "Extensions\\ServiceCollectionExtensions.cs",
-              "ToolTip": "E:\\ASP\\PetProject\\Extensions\\ServiceCollectionExtensions.cs",
-              "RelativeToolTip": "Extensions\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T18:05:54.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 26,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "E:\\ASP\\PetProject\\AppDBContext.cs",
               "RelativeDocumentMoniker": "AppDBContext.cs",
@@ -334,25 +597,11 @@
               "RelativeToolTip": "AppDBContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T18:04:26.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T18:04:26.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Profile\\Profile.cshtml",
-              "RelativeDocumentMoniker": "Views\\Profile\\Profile.cshtml",
-              "ToolTip": "E:\\ASP\\PetProject\\Views\\Profile\\Profile.cshtml",
-              "RelativeToolTip": "Views\\Profile\\Profile.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T21:45:55.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 29,
               "Title": "Login.cshtml",
               "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Auth\\Login.cshtml",
@@ -360,12 +609,11 @@
               "RelativeToolTip": "Views\\Auth\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T22:14:39.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T22:14:39.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 37,
               "Title": "Register.cshtml",
               "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Auth\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Auth\\Register.cshtml",
@@ -373,38 +621,24 @@
               "RelativeToolTip": "Views\\Auth\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T22:14:47.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T22:14:47.043Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Main.cshtml",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Store\\Main.cshtml",
-              "RelativeDocumentMoniker": "Views\\Store\\Main.cshtml",
-              "ToolTip": "E:\\ASP\\PetProject\\Views\\Store\\Main.cshtml",
-              "RelativeToolTip": "Views\\Store\\Main.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAABAAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\Views\\Store\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Store\\Index.cshtml",
+              "ToolTip": "E:\\ASP\\PetProject\\Views\\Store\\Index.cshtml",
+              "RelativeToolTip": "Views\\Store\\Index.cshtml",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAJcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-18T22:24:06.35Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "E:\\ASP\\PetProject\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GameController.cs",
-              "ToolTip": "E:\\ASP\\PetProject\\Controllers\\GameController.cs",
-              "RelativeToolTip": "Controllers\\GameController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T21:54:16.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 38,
               "Title": "games.json",
               "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\json\\games.json",
               "RelativeDocumentMoniker": "Models\\json\\games.json",
@@ -416,7 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 39,
               "Title": "GameEntity.cs",
               "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\GameEntity.cs",
               "RelativeDocumentMoniker": "Models\\GameEntity.cs",
@@ -428,16 +662,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "E:\\ASP\\PetProject\\Models\\UserEntity.cs",
               "RelativeDocumentMoniker": "Models\\UserEntity.cs",
               "ToolTip": "E:\\ASP\\PetProject\\Models\\UserEntity.cs",
               "RelativeToolTip": "Models\\UserEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAACGAQAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T21:41:38.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T21:41:38.403Z"
             }
           ]
         }

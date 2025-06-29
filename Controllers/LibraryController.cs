@@ -19,27 +19,18 @@ namespace PetProject.Controllers
             _gameService = gameService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? selectedId)
         {
-            return RedirectToAction(nameof(Library));
-        }
-
-        public async Task<IActionResult> Library(int? selectedId)
-        {
-            // 1) Получаем ник из Claims
             var nick = User.FindFirstValue(ClaimTypes.Name);
             if (string.IsNullOrEmpty(nick))
-                return Challenge(); // или RedirectToAction("Login", "Auth");
+                return RedirectToAction("Login", "Auth");
 
-            // 2) Подгружаем игры по нику
             var games = await _userService.GetUserGamesByNickAsync(nick);
 
-            // 3) Выбираем текущую
             var selected = selectedId.HasValue
                 ? games.FirstOrDefault(g => g.Id == selectedId.Value)
                 : games.FirstOrDefault();
 
-            // 4) Формируем ViewModel
             var vm = new LibraryViewModel
             {
                 Games = games,
@@ -51,20 +42,16 @@ namespace PetProject.Controllers
         [HttpPost]
     public async Task<IActionResult> AddGame(int gameId)
     {
-        // 1) достаём ник из claims
         var nick = User.FindFirstValue(ClaimTypes.Name);
         if (string.IsNullOrEmpty(nick))
-            return Challenge();
+            return RedirectToAction("Login", "Auth");
 
-        // 2) получаем титул игры по id
         var game = await _gameService.GetByIdAsync(gameId);
         if (game == null)
             return NotFound();
 
-        // 3) добавляем в библиотеку
         await _userService.AddGameToUserAsync(nick, game.Title);
 
-        // 4) редиректим в библиотеку
         return RedirectToAction(nameof(Index));
     }
     }

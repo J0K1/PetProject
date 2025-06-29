@@ -6,9 +6,8 @@
 
 <main class="library-page">
     <div class="library-container">
-        <!-- Левая колонка: список игр -->
         <aside class="library-list">
-            <h2>Ваша библиотека</h2>
+            <h2>Library</h2>
             <ul>
                 @foreach (var game in Model.Games)
                 {
@@ -22,7 +21,6 @@
             </ul>
         </aside>
 
-        <!-- Правая колонка: детали выбранной игры -->
         <section class="library-detail">
             @if (Model.SelectedGame != null)
             {
@@ -40,7 +38,7 @@
             }
             else
             {
-                <p>Выберите игру слева, чтобы увидеть детали.</p>
+                <p>Choose game</p>
             }
         </section>
     </div>
@@ -48,7 +46,6 @@
 
 @section Scripts {
     <script>
-        // простой скрипт для перезагрузки страницы с параметром selectedId
         function selectGame(gameId) {
             const url = new URL(window.location.href);
             url.searchParams.set('selectedId', gameId);

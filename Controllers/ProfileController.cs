@@ -1,50 +1,65 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿// Controllers/ProfileController.cs
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using PetProject.Models.Views;
 using PetProject.Services;
 
 namespace PetProject.Controllers
 {
     [Authorize]
+    [Route("Profile")]
     public class ProfileController : Controller
     {
-        public readonly UserService _userService;
-
+        private readonly UserService _userService;
         public ProfileController(UserService userService)
-        {
-            _userService = userService;
-        }
+            => _userService = userService;
 
-        public IActionResult Index()
+        [HttpGet("")]
+        public async Task<IActionResult> Index()
         {
-            return RedirectToAction(nameof(Profile));
-        }
-
-        [HttpGet("/Profile")]
-        public async Task<IActionResult> Profile()
-        {
-            var nick = HttpContext.Session.GetString("User");
-            if (string.IsNullOrEmpty(nick))
+            var currentNick = User.Identity?.Name;
+            if (string.IsNullOrEmpty(currentNick))
                 return RedirectToAction("Login", "Auth");
 
-            var user = await _userService.GetUserWithDetailsByNickAsync(nick);
-            if (user == null)
-            {
-                //HttpContext.Session.Remove("User");
-                //return RedirectToAction("Login", "Auth");
+            var me = await _userService.GetUserWithDetailsByNickAsync(currentNick);
+            if (me == null)
                 return NoContent();
-            }
 
-            return View(user);
+            var vm = new ProfileViewModel
+            {
+                User = me,
+                IsOwnProfile = true,
+                IsFriend = false,
+                CurrentUserNick = currentNick
+            };
+            return View("Index", vm);
         }
 
-        [HttpGet("/Profile/{nick}")]
-        public async Task<IActionResult> Profile(string nick)
+        [HttpGet("{nick}")]
+        public async Task<IActionResult> Index(string nick)
         {
+            var currentNick = User.Identity?.Name;
+
             var user = await _userService.GetUserWithDetailsByNickAsync(nick);
             if (user == null)
                 return NotFound();
 
-            return View(user);
+            bool isOwn = !string.IsNullOrEmpty(currentNick) && currentNick == nick;
+            bool isFriend = false;
+            if (!isOwn && !string.IsNullOrEmpty(currentNick))
+            {
+                var me = await _userService.GetUserWithDetailsByNickAsync(currentNick);
+                isFriend = me?.Friends.Any(f => f.Nick == nick) == true;
+            }
+
+            var vm = new ProfileViewModel
+            {
+                User = user,
+                IsOwnProfile = isOwn,
+                IsFriend = isFriend,
+                CurrentUserNick = currentNick
+            };
+            return View("Index", vm);
         }
     }
 }

@@ -7,7 +7,8 @@ var configuration = builder.Configuration;
 
 builder.Logging.AddConsole();
 
-builder.Services.AddAppServices(builder.Configuration);
+builder.Services.AddMyAppServices(configuration);
+builder.Services.AddSteamAppServices(configuration);
 
 builder.Services
     .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -15,6 +16,7 @@ builder.Services
     {
         options.LoginPath = "/Auth/Login";
         options.LogoutPath = "/Auth/Logout";
+        options.AccessDeniedPath = "/Error/Error404";
         options.ExpireTimeSpan = TimeSpan.FromDays(7);
     });
 
@@ -45,6 +47,7 @@ app.UseAuthorization();
 app.UseSession();
 
 app.UseHttpsRedirection();
+app.UseStatusCodePagesWithReExecute("/Error/{0}");
 
 app.MapControllerRoute(
     name: "default",
