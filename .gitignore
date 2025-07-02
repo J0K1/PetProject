@@ -1,0 +1,52 @@
+## Файлы и папки IDE/редакторов ##
+.vs/
+.idea/
+*.user
+*.suo
+*.userprefs
+*.userosscache
+*.sln.docstates
+
+## Файлы сборки ##
+bin/
+obj/
+/Docker/obj/
+
+## Файлы зависимостей ##
+/packages/
+*.nupkg
+
+## Файлы Docker ##
+docker-compose.override.yml
+docker-compose.yml
+docker-compose.dcproj
+.dockerignore
+
+## Файлы конфигурации среды ##
+appsettings.Development.json
+launchSettings.json
+/keys/
+
+## Файлы системы контроля версий ##
+.gitattributes
+
+## Временные файлы ##
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+
+## Файлы проектов ##
+*.csproj.user
+*.userprefs
+*.user
+*.pubxml
+
+## Файлы пакетов ##
+*.nupkg
+*.nuget.props
+*.nuget.targets
+
+## Файлы тестов ##
+TestResults/
