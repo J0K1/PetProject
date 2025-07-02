@@ -24,7 +24,7 @@ namespace PetProject.Controllers
             return await GetProfile(_myId);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Policy = "NotBanned")]
         [HttpGet("GetProfile/{id}")]
         public async Task<IActionResult> GetProfile(string id)
         {

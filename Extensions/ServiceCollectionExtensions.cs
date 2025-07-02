@@ -21,6 +21,14 @@ namespace PetProject.Extensions
             {
                 options.UseNpgsql(configuration.GetConnectionString(nameof(AppDBContext)));
             });
+
+            services.AddAuthorization(opts =>
+            {
+                opts.AddPolicy("NotBanned", policy =>
+                {
+                    policy.RequireClaim("IsBanned", "false");
+                });
+            });
             
             return services;
         }

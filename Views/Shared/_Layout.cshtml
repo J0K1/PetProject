@@ -12,15 +12,20 @@
         <nav class="navbar-nav">
             <div class="nav-left">
                 <a asp-controller="Store" asp-action="Index">Store</a>
-                <a asp-controller="Unity" asp-action="Index">Unity</a>
 
                 @if (User is not null && User.Identity.IsAuthenticated)
                 {
+                    bool isAdmin = User.IsInRole(PetProject.Enums.UserRole.Admin.ToString());
+
+                    if(isAdmin)
+                    {
+                        <a asp-controller="Unity" asp-action="Index">Unity</a>
+                    }
+                    
                     <a asp-controller="Library" asp-action="Index">Library</a>
 
                     <a asp-controller="Steam" asp-action="Index">Steam</a>
 
-                    bool isAdmin = User.IsInRole(PetProject.Enums.UserRole.Admin.ToString());
                     bool isBanned = User.HasClaim(c => c.Type == "IsBanned" && c.Value == "true");
 
                     string nickClass = "";
