@@ -105,10 +105,9 @@
         <script>
             function resetFilters() {
                 const form = document.querySelector('.store-filters');
-                // очистить все input/select в форме
                 form.querySelectorAll('input, select').forEach(el => {
                     if (el.tagName.toLowerCase() === 'select') {
-                        el.selectedIndex = 0;  // выбираем первый option
+                        el.selectedIndex = 0;  
                     } else {
                         el.value = '';
                     }

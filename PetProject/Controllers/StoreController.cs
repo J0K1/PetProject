@@ -2,7 +2,6 @@
 using PetProject.Models.Views;
 using PetProject.Services;
 using System.Security.Claims;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace PetProject.Controllers
 {
@@ -42,8 +41,8 @@ namespace PetProject.Controllers
             games = sortBy switch
             {
                 "title" => games.OrderBy(g => g.Title).ToList(),
-                "id" => games.OrderBy(g => g.Id).ToList(),
-                _ => games
+                "id"=> games.OrderBy(g => g.Id).ToList(),
+                _ => games.OrderBy(g => g.Id).ToList()
             };
 
             List<int> purchasedIds = new();

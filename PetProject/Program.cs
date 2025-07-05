@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using PetProject;
 using PetProject.Extensions;
 using Scalar.AspNetCore;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args); 
 
@@ -49,6 +51,15 @@ var app = builder.Build();
 //    var db = scope.ServiceProvider.GetRequiredService<AppDBContext>();
 //    db.Database.Migrate();
 //}
+
+var supportedCultures = new[] { new CultureInfo("ru-RU") };
+app.UseRequestLocalization(new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture("ru-RU"),
+    SupportedCultures = supportedCultures,
+    SupportedUICultures = supportedCultures
+});
+
 
 if (app.Environment.IsDevelopment())
 {

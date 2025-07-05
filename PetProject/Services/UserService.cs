@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Components.Web;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
-using Microsoft.Identity.Client;
+﻿using Microsoft.EntityFrameworkCore;
 using PetProject.Models;
 
 namespace PetProject.Services
@@ -45,8 +42,11 @@ namespace PetProject.Services
                 .FirstOrDefaultAsync(u => u.Nick == nick);
         }
 
-        public async Task<List<UserEntity>> GetUsersByNickAsync(string nick)
+        public async Task<List<UserEntity>> GetUsersByNickAsync(string? nick)
         {
+            if (string.IsNullOrEmpty(nick))
+                return await _dbContext.Users.ToListAsync();
+
             return await _dbContext.Users
                 .Where(u => u.Nick.ToLower().Contains(nick.ToLower()))
                 .ToListAsync();
@@ -77,6 +77,20 @@ namespace PetProject.Services
                 return false;
             
             await _dbContext.Users.AddAsync(user);
+            await _dbContext.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> UpdateUserAsync (Guid id, UserEntity updatedUser)
+        {
+            var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == id);    
+            if(user == null) 
+                return false;
+
+            user.Nick = updatedUser.Nick;
+            user.Role = updatedUser.Role;
+            user.IsBanned = updatedUser.IsBanned;
+
             await _dbContext.SaveChangesAsync();
             return true;
         }

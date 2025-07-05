@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using PetProject.Models;
+using PetProject.Models.Views;
 
 namespace PetProject.Services
 {
@@ -49,8 +50,11 @@ namespace PetProject.Services
         public Task<GameEntity?> GetByIdAsync(int id)
             => _dbContext.Games.FindAsync(id).AsTask();
 
-        public async Task<List<GameEntity>> GetByTitleAsync(string title)
+        public async Task<List<GameEntity>> GetByTitleAsync(string? title)
         {
+            if (string.IsNullOrEmpty(title))
+                return await _dbContext.Games.ToListAsync();
+
             var lower = title.Trim().ToLower();
             return await _dbContext.Games
                 .Where(g => g.Title.ToLower().Contains(lower))
@@ -69,17 +73,16 @@ namespace PetProject.Services
             await _dbContext.Games.AddAsync(game);
             await _dbContext.SaveChangesAsync();
         }
-
-        public async Task<bool> UpdateAsync(int id, GameEntity updated)
+        public async Task<bool> UpdateAsync(int id, GameEntity updatedGame)
         {
-            var existing = await _dbContext.Games.FindAsync(id);
-            if (existing == null) return false;
+            var game = await _dbContext.Games.FirstOrDefaultAsync(g => g.Id == id);
+            if (game == null) return false;
 
-            existing.Title = updated.Title;
-            existing.Genre = updated.Genre;
-            existing.Year = updated.Year;
-            existing.Price = updated.Price;
-            existing.ImageUrl = updated.ImageUrl;
+            game.Title = updatedGame.Title;
+            game.Genre = updatedGame.Genre;
+            game.Year = updatedGame.Year;
+            game.Price = updatedGame.Price;
+            game.ImageUrl = updatedGame.ImageUrl;
 
             await _dbContext.SaveChangesAsync();
             return true;

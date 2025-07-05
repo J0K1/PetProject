@@ -1,0 +1,357 @@
+﻿@model PetProject.Models.Views.AdminViewModel
+@using PetProject.Enums
+@using System.Globalization
+@{
+    ViewData["Title"] = "Admin Panel";
+}
+
+<style>
+    .section-title {
+    font-size: 2rem;
+    margin: 2rem 2rem 1rem;
+    color: #fff;
+    padding-bottom: 0.5rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 2rem 3rem;
+}
+
+.card-item {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    width: 180px;
+    height: 240px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    overflow: hidden;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-avatar img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #2a2a2a;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.card-label {
+    font-size: 1rem;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.modal-custom {
+    display: none; /* Show with JS */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-custom {
+    background-color: #1e1e1e;
+    padding: 2rem;          
+    border-radius: 12px;
+    color: #f5f5f5;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+    position: fixed;        
+    top: 50%;               
+    left: 50%;              
+    transform: translate(-50%, -50%);  
+    max-width: 90vw;        
+    display: inline-block;  
+    box-sizing: border-box; 
+    max-height: 90vh;       
+}
+
+.modal-content-custom * {
+    padding: 0.2rem; /* или любое нужное значение */
+    box-sizing: border-box; /* чтобы padding не ломал размеры элементов */
+}
+
+.close-btn {
+    color: #ccc;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #ff4d4d;
+}
+
+.form-label {
+    color: #ccc;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    display: block;
+    width: 90%;
+}
+
+.form-control,
+.form-select {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    width: 90%;
+    
+}
+
+.form-control:focus,
+.form-select:focus {
+    outline: none;
+    border-color: #00ffcc;
+    width: 90%;
+}
+
+.form-check-input {
+    background-color: #2a2a2a;
+    border-color: #333;
+    width: 90%;
+}
+
+.form-check-label {
+    color: #ccc;
+    font-size: 0.95rem;
+    width: 90%; 
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #00ffcc;
+    color: #000;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #00e6b8;
+}
+
+.btn-danger {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #e64545;
+}
+
+.btn-success {
+    background-color: #33cc66;
+    color: #fff;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #29b25a;
+}
+</style>
+
+<div>
+    <h2 class="section-title">Пользователи</h2>
+    <div class="card-container">
+        @foreach (var user in Model.Users)
+        {
+            <!-- User Card -->
+            <div class="card-item" onclick="openUserModal('@user.Id')">
+                <div class="card-avatar">
+                    <img src="@user.PhotoUrl" alt="Avatar" />
+                </div>
+                <div class="card-label">@user.Nick</div>
+            </div>
+
+            <!-- User Edit Modal -->
+            <div class="modal-custom" id="userModal-@user.Id">
+                <div class="modal-content-custom">
+                    <span class="close-btn" onclick="closeModal('userModal-@user.Id')">&times;</span>
+                    <form method="post" asp-action="UpdateUser">
+                        <input type="hidden" name="id" value="@user.Id" />
+
+                        <div class="mb-3">
+                            <label class="form-label" for="nick-@user.Id">Ник</label>
+                            <input id="nick-@user.Id" name="nick" class="form-control" value="@user.Nick" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="role-@user.Id">Роль</label>
+                            <select id="role-@user.Id" name="role" class="form-select">
+                                @foreach (UserRole role in Enum.GetValues(typeof(UserRole)))
+                                {
+                                    <option value="@role" selected="@(user.Role == role)">@role</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input 
+                                type="checkbox" 
+                                id="banCheck-@user.Id" 
+                                name="isBanned" 
+                                class="form-check-input" 
+                                @(user.IsBanned ? "checked" : "") 
+                                value="true" />
+                            <label class="form-check-label" for="banCheck-@user.Id">Забанен</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Сохранить</button>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+
+    <h2 class="section-title">Игры</h2>
+    <button class="btn btn-success" style="margin: 0 2rem;" onclick="openNewGameModal()">Добавить новую игру</button>
+
+    <div class="card-container">
+        @foreach (var game in Model.Games)
+        {
+            <!-- Game Card -->
+            <div class="card-item" onclick="openGameModal('@game.Id')">
+                <div class="card-image">
+                    <img src="@game.ImageUrl" alt="Game Image" />
+                </div>
+                <div class="card-label">@game.Title</div>
+            </div>
+
+            <!-- Game Edit Modal -->
+            <div class="modal-custom" id="gameModal-@game.Id">
+                <div class="modal-content-custom">
+                    <span class="close-btn" onclick="closeModal('gameModal-@game.Id')">&times;</span>
+                    <form method="post" asp-action="UpdateGame">
+                        <input type="hidden" name="id" value="@game.Id" />
+
+                        <div class="mb-3">
+                            <label class="form-label" for="title-@game.Id">Название</label>
+                            <input id="title-@game.Id" name="title" class="form-control" value="@game.Title" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="genre-@game.Id">Жанр</label>
+                            <input id="genre-@game.Id" name="genre" class="form-control" value="@game.Genre" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="year-@game.Id">Год</label>
+                            <input id="year-@game.Id" name="year" type="number" class="form-control" value="@game.Year" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="price-@game.Id">Цена</label>
+                            <input id="price-@game.Id" name="price" type="text" class="form-control" value="@game.Price.ToString(CultureInfo.InvariantCulture)" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="imageURL-@game.Id">URL изображения</label>
+                            <input id="imageURL-@game.Id" name="imageURL" class="form-control" value="@game.ImageUrl" />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Сохранить</button>
+                        <button type="button" class="btn btn-danger" onclick="deleteGame('@game.Id')">Удалить</button>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- New Game Modal -->
+    <div class="modal-custom" id="newGameModal">
+        <div class="modal-content-custom">
+            <span class="close-btn" onclick="closeModal('newGameModal')">&times;</span>
+            <form method="post" asp-action="CreateGame">
+                <div class="mb-3">
+                    <label class="form-label" for="new-title">Название</label>
+                    <input id="new-title" name="title" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="new-genre">Жанр</label>
+                    <input id="new-genre" name="genre" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="new-year">Год</label>
+                    <input id="new-year" name="year" type="number" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="new-price">Цена</label>
+                    <input id="new-price" name="price" type="text" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="new-imageURL">URL изображения</label>
+                    <input id="new-imageURL" name="imageURL" class="form-control" />
+                </div>
+                <button type="submit" class="btn btn-success">Добавить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function openUserModal(id) {
+            document.getElementById('userModal-' + id).style.display = 'flex';
+        }
+        function openGameModal(id) {
+            document.getElementById('gameModal-' + id).style.display = 'flex';
+        }
+        function openNewGameModal() {
+            document.getElementById('newGameModal').style.display = 'flex';
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+        function deleteGame(id) {
+            if (!confirm('Удалить игру?')) return;
+            fetch(`/Admin/DeleteGame/${id}`, { method: 'POST', headers: { 'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value } })
+                .then(() => location.reload());
+        }
+    </script>
+}
