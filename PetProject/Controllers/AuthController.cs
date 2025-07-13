@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using PetProject.Models;
 using PetProject.Models.Views;
-using PetProject.Services;
+using PetProject.Services.Interfaces;
 using System.Security.Claims;
 
 namespace PetProject.Controllers
@@ -12,8 +12,8 @@ namespace PetProject.Controllers
     [Route("Auth")]
     public class AuthController : Controller
     {
-        private readonly UserService _userService;
-        public AuthController(UserService userService)
+        private readonly IUserService _userService;
+        public AuthController(IUserService userService)
         {
             _userService = userService;
         }

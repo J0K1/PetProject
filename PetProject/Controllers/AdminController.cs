@@ -1,23 +1,19 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using PetProject.Enums;
 using PetProject.Models;
 using PetProject.Models.Views;
-using PetProject.Services;
-using Polly;
-using Polly.Bulkhead;
+using PetProject.Services.Interfaces;
 using System.Globalization;
-using System.Security.Claims;
 
 namespace PetProject.Controllers
 {
     [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
-        private readonly GameService _gameService;
-        private readonly UserService _userService;
-        public AdminController(GameService gameService, UserService userService)
+        private readonly IGameService _gameService;
+        private readonly IUserService _userService;
+        public AdminController(IGameService gameService, IUserService userService)
         {
             _gameService = gameService;
             _userService = userService;

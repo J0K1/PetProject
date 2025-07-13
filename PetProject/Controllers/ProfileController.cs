@@ -1,8 +1,7 @@
-﻿// Controllers/ProfileController.cs
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PetProject.Models.Views;
-using PetProject.Services;
+using PetProject.Services.Interfaces;
 
 namespace PetProject.Controllers
 {
@@ -10,8 +9,8 @@ namespace PetProject.Controllers
     [Route("Profile")]
     public class ProfileController : Controller
     {
-        private readonly UserService _userService;
-        public ProfileController(UserService userService)
+        private readonly IUserService _userService;
+        public ProfileController(IUserService userService)
             => _userService = userService;
 
         [HttpGet("")]

@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyModel;
 using PetProject.Models.Views;
-using PetProject.Services;
+using PetProject.Services.Interfaces;
 using System.Security.Claims;
 
 namespace PetProject.Controllers
@@ -10,10 +9,10 @@ namespace PetProject.Controllers
     [Authorize]
     public class LibraryController : Controller
     {
-        private readonly UserService _userService;
-        private readonly GameService _gameService;
+        private readonly IUserService _userService;
+        private readonly IGameService _gameService;
 
-        public LibraryController(UserService userService, GameService gameService)
+        public LibraryController(IUserService userService, IGameService gameService)
         {
             _userService = userService;
             _gameService = gameService;

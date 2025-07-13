@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <VSTestLogger>console;verbosity=detailed</VSTestLogger>
+  </PropertyGroup>
+</Project>
