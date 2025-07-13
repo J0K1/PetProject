@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PetProject.Models;
-using PetProject.Services;
+using PetProject.Services.Interfaces;
 
 namespace PetProject.Controllers
 {
@@ -8,22 +8,22 @@ namespace PetProject.Controllers
     [Route("[controller]")]
     public class GamesController : Controller
     {
-        private readonly GameService _gameService;
+        private readonly IGameService _gameService;
 
-        public GamesController(GameService gameService)
+        public GamesController(IGameService gameService)
         {
             _gameService = gameService;
         }
 
-        [HttpPost("AddGames")]
-        public async Task<IActionResult> AddGames()
+        [HttpPost("InitializeGames")]
+        public async Task<IActionResult> InitializeGames()
         {
-            await _gameService.AddGamesAsync();
+            await _gameService.InitializeGamesAsync();
             return Ok();
         }
 
         [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAll([FromQuery] int? year = null, [FromQuery] string genre = null)
+        public async Task<IActionResult> GetAll([FromQuery] int? year = null, [FromQuery] string? genre = null)
         {
             var games = await _gameService.GetAllAsync(year, genre);
             if (games == null || !games.Any())
@@ -90,10 +90,10 @@ namespace PetProject.Controllers
             return NoContent();
         }
 
-        [HttpPost("DeleteAllGames")]
-        public async Task<IActionResult> DeleteAllGames()
+        [HttpPost("ClearAllAsync")]
+        public async Task<IActionResult> ClearAllAsync()
         {
-            await _gameService.DeleteAllGamesAsync();
+            await _gameService.ClearAllAsync();
             return Ok();
         }
     }

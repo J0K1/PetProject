@@ -1,4 +1,4 @@
-namespace PetProject.Models
+namespace PetProject.Models.Views
 {
     public class ErrorViewModel
     {

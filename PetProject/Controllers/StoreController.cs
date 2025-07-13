@@ -1,16 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PetProject.Models.Views;
 using PetProject.Services;
+using PetProject.Services.Interfaces;
 using System.Security.Claims;
 
 namespace PetProject.Controllers
 {
     public class StoreController : Controller
     {
-        private readonly GameService _gameService;
-        private readonly UserService _userService;
+        private readonly IGameService _gameService;
+        private readonly IUserService _userService;
         
-        public StoreController(GameService gameService, UserService userService)
+        public StoreController(IGameService gameService, IUserService userService)
         {
             _gameService = gameService;
             _userService = userService;

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PetProject.Models;
-using PetProject.Services;
+using PetProject.Services.Interfaces;
 
 namespace PetProject.Controllers
 {
@@ -8,9 +8,9 @@ namespace PetProject.Controllers
     [Route("[controller]")]
     public class UserController : Controller
     {
-        private readonly UserService _userService;
+        private readonly IUserService _userService;
 
-        public UserController(UserService userService)
+        public UserController(IUserService userService)
         {
             _userService = userService;
         }
@@ -18,7 +18,7 @@ namespace PetProject.Controllers
         [HttpPost("AddUsers")]
         public async Task<IActionResult> AddUsers()
         {
-            await _userService.AddUsersAsync();
+            await _userService.InitializeUsersAsync();
             return Ok();
         }
 

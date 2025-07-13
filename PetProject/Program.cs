@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using PetProject;
 using PetProject.Extensions;
 using Scalar.AspNetCore;
+using StackExchange.Redis;
 using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args); 
@@ -14,6 +15,9 @@ var configuration = builder.Configuration;
 var services = builder.Services;
 
 builder.Logging.AddConsole();
+
+services.AddSingleton<IConnectionMultiplexer>(_ =>
+    ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("Redis")!));
 
 services.AddMyAppServices(configuration);
 services.AddSteamAppServices(configuration);
