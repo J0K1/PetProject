@@ -1,0 +1,63 @@
+﻿@using PetProject.Shared.Enums
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar-nav">
+            <div class="nav-left">
+                <a asp-controller="Store" asp-action="Index">Store</a>
+
+                @if (User?.Identity?.IsAuthenticated == true && User.IsInRole(UserRole.Admin.ToString()))
+                {
+                    <a asp-controller="Admin" asp-action="Index">Admin Panel</a>
+                }
+
+                <a asp-controller="Unity" asp-action="Index">Unity</a>
+
+                @if (User?.Identity?.IsAuthenticated == true)
+                {
+                    var isAdmin = User.IsInRole(UserRole.Admin.ToString());
+                    var isBanned = User.HasClaim(c => c.Type == "IsBanned" && c.Value == "true");
+
+                    <a asp-controller="Library" asp-action="Index">Library</a>
+                    <a asp-controller="Steam" asp-action="Index">Steam</a>
+
+                    var nickClass = isAdmin ? "admin-nick" : isBanned ? "banned-nick" : "";
+
+                    <a asp-controller="Profile" asp-action="Index">
+                        Profile (<span class="@nickClass">@User.Identity.Name</span>)
+                    </a>
+                }
+            </div>
+
+            <div class="nav-right">
+                @if (User?.Identity?.IsAuthenticated == true)
+                {
+                    <form asp-controller="Auth" asp-action="Logout" method="post" style="display:inline">
+                        <button type="submit" class="login-button">Logout</button>
+                    </form>
+                }
+                else
+                {
+                    <a asp-controller="Auth" asp-action="Login" class="login-button">Login</a>
+                }
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,58 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\ASP\\Web_pet_project\\",
+  "WorkspaceRootPath": "E:\\ASP\\PetProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EFE76F30-1D14-387B-94B9-9452CB802415}|PetProject.Tests\\PetProject.Tests.csproj|e:\\asp\\web_pet_project\\petproject.tests\\userservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFE76F30-1D14-387B-94B9-9452CB802415}|PetProject.Tests\\PetProject.Tests.csproj|solutionrelative:petproject.tests\\userservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0410D06-38BF-4B37-B05D-91169901F064}|src\\PetProject.Web\\PetProject.Web.csproj|e:\\asp\\petproject\\src\\petproject.web\\appsettings.web.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B0410D06-38BF-4B37-B05D-91169901F064}|src\\PetProject.Web\\PetProject.Web.csproj|solutionrelative:src\\petproject.web\\appsettings.web.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|e:\\asp\\web_pet_project\\petproject\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|solutionrelative:petproject\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0410D06-38BF-4B37-B05D-91169901F064}|src\\PetProject.Web\\PetProject.Web.csproj|e:\\asp\\petproject\\src\\petproject.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0410D06-38BF-4B37-B05D-91169901F064}|src\\PetProject.Web\\PetProject.Web.csproj|solutionrelative:src\\petproject.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|e:\\asp\\web_pet_project\\petproject\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|solutionrelative:petproject\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0410D06-38BF-4B37-B05D-91169901F064}|src\\PetProject.Web\\PetProject.Web.csproj|e:\\asp\\petproject\\src\\petproject.web\\appsettings.web.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B0410D06-38BF-4B37-B05D-91169901F064}|src\\PetProject.Web\\PetProject.Web.csproj|solutionrelative:src\\petproject.web\\appsettings.web.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|e:\\asp\\web_pet_project\\petproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|solutionrelative:petproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0410D06-38BF-4B37-B05D-91169901F064}|src\\PetProject.Web\\PetProject.Web.csproj|e:\\asp\\petproject\\src\\petproject.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B0410D06-38BF-4B37-B05D-91169901F064}|src\\PetProject.Web\\PetProject.Web.csproj|solutionrelative:src\\petproject.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|e:\\asp\\web_pet_project\\petproject\\controllers\\unitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|solutionrelative:petproject\\controllers\\unitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59BA480B-5887-4276-BDA4-45B51C3B1A6D}|src\\PetProject.User\\PetProject.User.csproj|e:\\asp\\petproject\\src\\petproject.user\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BA480B-5887-4276-BDA4-45B51C3B1A6D}|src\\PetProject.User\\PetProject.User.csproj|solutionrelative:src\\petproject.user\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|e:\\asp\\web_pet_project\\petproject\\controllers\\steamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|solutionrelative:petproject\\controllers\\steamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16719EA0-48B0-4344-ABC7-AD78857F71DD}|src\\PetProject.Game\\PetProject.Game.csproj|e:\\asp\\petproject\\src\\petproject.game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16719EA0-48B0-4344-ABC7-AD78857F71DD}|src\\PetProject.Game\\PetProject.Game.csproj|solutionrelative:src\\petproject.game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|e:\\asp\\web_pet_project\\petproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|solutionrelative:petproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|e:\\asp\\petproject\\docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|e:\\asp\\web_pet_project\\petproject\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|solutionrelative:petproject\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|e:\\asp\\petproject\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|e:\\asp\\web_pet_project\\petproject\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|solutionrelative:petproject\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|e:\\asp\\petproject\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|e:\\asp\\web_pet_project\\petproject\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|solutionrelative:petproject\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16719EA0-48B0-4344-ABC7-AD78857F71DD}|src\\PetProject.Game\\PetProject.Game.csproj|e:\\asp\\petproject\\src\\petproject.game\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{16719EA0-48B0-4344-ABC7-AD78857F71DD}|src\\PetProject.Game\\PetProject.Game.csproj|solutionrelative:src\\petproject.game\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|e:\\asp\\web_pet_project\\petproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|solutionrelative:petproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59BA480B-5887-4276-BDA4-45B51C3B1A6D}|src\\PetProject.User\\PetProject.User.csproj|e:\\asp\\petproject\\src\\petproject.user\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{59BA480B-5887-4276-BDA4-45B51C3B1A6D}|src\\PetProject.User\\PetProject.User.csproj|solutionrelative:src\\petproject.user\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|e:\\asp\\web_pet_project\\petproject\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|solutionrelative:petproject\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0410D06-38BF-4B37-B05D-91169901F064}|src\\PetProject.Web\\PetProject.Web.csproj|e:\\asp\\petproject\\src\\petproject.web\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B0410D06-38BF-4B37-B05D-91169901F064}|src\\PetProject.Web\\PetProject.Web.csproj|solutionrelative:src\\petproject.web\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|e:\\asp\\web_pet_project\\petproject\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9BBEB-2347-46E4-8CB7-2134B0E5BE8E}|PetProject\\PetProject.csproj|solutionrelative:petproject\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16719EA0-48B0-4344-ABC7-AD78857F71DD}|src\\PetProject.Game\\PetProject.Game.csproj|e:\\asp\\petproject\\src\\petproject.game\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16719EA0-48B0-4344-ABC7-AD78857F71DD}|src\\PetProject.Game\\PetProject.Game.csproj|solutionrelative:src\\petproject.game\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,172 +70,160 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserServiceTests.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject.Tests\\UserServiceTests.cs",
-              "RelativeDocumentMoniker": "PetProject.Tests\\UserServiceTests.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject.Tests\\UserServiceTests.cs",
-              "RelativeToolTip": "PetProject.Tests\\UserServiceTests.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowBkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:52:23.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "PetProject\\Services\\UserService.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject\\Services\\UserService.cs",
-              "RelativeToolTip": "PetProject\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T15:03:51.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "PetProject\\Controllers\\UserController.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\UserController.cs",
-              "RelativeToolTip": "PetProject\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:58:41.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UnityController.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\UnityController.cs",
-              "RelativeDocumentMoniker": "PetProject\\Controllers\\UnityController.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\UnityController.cs",
-              "RelativeToolTip": "PetProject\\Controllers\\UnityController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:58:36.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "StoreController.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\StoreController.cs",
-              "RelativeDocumentMoniker": "PetProject\\Controllers\\StoreController.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\StoreController.cs",
-              "RelativeToolTip": "PetProject\\Controllers\\StoreController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:58:28.417Z",
-              "EditorCaption": ""
+              "Title": "appsettings.web.Development.json",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\src\\PetProject.Web\\appsettings.web.Development.json",
+              "RelativeDocumentMoniker": "src\\PetProject.Web\\appsettings.web.Development.json",
+              "ToolTip": "E:\\ASP\\PetProject\\src\\PetProject.Web\\appsettings.web.Development.json",
+              "RelativeToolTip": "src\\PetProject.Web\\appsettings.web.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-25T14:57:12.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SteamController.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\SteamController.cs",
-              "RelativeDocumentMoniker": "PetProject\\Controllers\\SteamController.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\SteamController.cs",
-              "RelativeToolTip": "PetProject\\Controllers\\SteamController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:58:23.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "PetProject\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "PetProject\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:58:15.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "PetProject\\Controllers\\ProfileController.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "PetProject\\Controllers\\ProfileController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:57:57.659Z",
+              "DocumentIndex": 0,
+              "Title": "appsettings.web.json",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\src\\PetProject.Web\\appsettings.web.json",
+              "RelativeDocumentMoniker": "src\\PetProject.Web\\appsettings.web.json",
+              "ToolTip": "E:\\ASP\\PetProject\\src\\PetProject.Web\\appsettings.web.json",
+              "RelativeToolTip": "src\\PetProject.Web\\appsettings.web.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-24T16:55:05.148Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "LibraryController.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\LibraryController.cs",
-              "RelativeDocumentMoniker": "PetProject\\Controllers\\LibraryController.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\LibraryController.cs",
-              "RelativeToolTip": "PetProject\\Controllers\\LibraryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:57:38.168Z",
-              "EditorCaption": ""
+              "Title": "Dockerfile",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\src\\PetProject.Web\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\PetProject.Web\\Dockerfile",
+              "ToolTip": "E:\\ASP\\PetProject\\src\\PetProject.Web\\Dockerfile",
+              "RelativeToolTip": "src\\PetProject.Web\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-24T16:07:27.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\src\\PetProject.User\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\PetProject.User\\Dockerfile",
+              "ToolTip": "E:\\ASP\\PetProject\\src\\PetProject.User\\Dockerfile",
+              "RelativeToolTip": "src\\PetProject.User\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-24T16:07:17.285Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "PetProject\\Controllers\\GameController.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\GameController.cs",
-              "RelativeToolTip": "PetProject\\Controllers\\GameController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:57:34.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "PetProject\\Controllers\\AdminController.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "PetProject\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:57:03.593Z",
-              "EditorCaption": ""
+              "Title": "Dockerfile",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\src\\PetProject.Game\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\PetProject.Game\\Dockerfile",
+              "ToolTip": "E:\\ASP\\PetProject\\src\\PetProject.Game\\Dockerfile",
+              "RelativeToolTip": "src\\PetProject.Game\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-24T16:07:04.805Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ErrorController.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\ErrorController.cs",
-              "RelativeDocumentMoniker": "PetProject\\Controllers\\ErrorController.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\ErrorController.cs",
-              "RelativeToolTip": "PetProject\\Controllers\\ErrorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:57:01.469Z",
-              "EditorCaption": ""
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "E:\\ASP\\PetProject\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-07-16T22:55:45.864Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "PetProject\\Controllers\\AuthController.cs",
-              "ToolTip": "E:\\ASP\\Web_pet_project\\PetProject\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "PetProject\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\launchSettings.json",
+              "RelativeDocumentMoniker": "launchSettings.json",
+              "ToolTip": "E:\\ASP\\PetProject\\launchSettings.json",
+              "RelativeToolTip": "launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-24T15:16:55.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "docker-compose.override.yml",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\docker-compose.override.yml",
+              "RelativeDocumentMoniker": "docker-compose.override.yml",
+              "ToolTip": "E:\\ASP\\PetProject\\docker-compose.override.yml",
+              "RelativeToolTip": "docker-compose.override.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-07-16T23:01:36.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\src\\PetProject.Game\\Program.cs",
+              "RelativeDocumentMoniker": "src\\PetProject.Game\\Program.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\src\\PetProject.Game\\Program.cs",
+              "RelativeToolTip": "src\\PetProject.Game\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:56:35.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T22:40:40.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\src\\PetProject.User\\Program.cs",
+              "RelativeDocumentMoniker": "src\\PetProject.User\\Program.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\src\\PetProject.User\\Program.cs",
+              "RelativeToolTip": "src\\PetProject.User\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T22:40:31.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\src\\PetProject.Web\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "src\\PetProject.Web\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\ASP\\PetProject\\src\\PetProject.Web\\Properties\\launchSettings.json",
+              "RelativeToolTip": "src\\PetProject.Web\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-16T21:33:04.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\src\\PetProject.Web\\Program.cs",
+              "RelativeDocumentMoniker": "src\\PetProject.Web\\Program.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\src\\PetProject.Web\\Program.cs",
+              "RelativeToolTip": "src\\PetProject.Web\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T17:57:36.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "E:\\ASP\\PetProject\\src\\PetProject.Game\\Services\\GameService.cs",
+              "RelativeDocumentMoniker": "src\\PetProject.Game\\Services\\GameService.cs",
+              "ToolTip": "E:\\ASP\\PetProject\\src\\PetProject.Game\\Services\\GameService.cs",
+              "RelativeToolTip": "src\\PetProject.Game\\Services\\GameService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T17:53:58.145Z"
             }
           ]
         }

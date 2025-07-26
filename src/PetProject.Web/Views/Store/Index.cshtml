@@ -1,0 +1,150 @@
+﻿@model PetProject.Shared.ViewModels.StoreViewModel
+@{
+    ViewData["Title"] = "Store";
+}
+
+<h1>Games</h1>
+
+<div class="form-container">
+    <form method="get" class="store-filters">
+        <input type="text" name="search"
+               value="@Model.Search"
+               placeholder="Поиск по названию…" />
+
+        <select name="genre">
+            <option value="">Все жанры</option>
+            @foreach (var g in Model.AllGenres)
+            {
+                if (g == Model.Genre)
+                {
+                    <option value="@g" selected="selected">@g</option>
+                }
+                else
+                {
+                    <option value="@g">@g</option>
+                }
+            }
+        </select>
+
+        <input type="number" name="year"
+               value="@(Model.Year?.ToString() ?? "")"
+               min="1900" max="2025"
+               placeholder="Год" />
+
+        <input type="number" name="priceFrom"
+               value="@(Model.PriceFrom?.ToString() ?? "")"
+               step="0.01" min="0" max="100" placeholder="Цена от" />
+        <input type="number" name="priceTo"
+               value="@(Model.PriceTo?.ToString() ?? "")"
+               step="0.01" min="0" max="100" placeholder="до" />
+
+        <select name="purchased">
+            @* Все *@
+            @if (Model.Purchased == null)
+            {
+                <option value="" selected="selected">Все</option>
+            }
+            else
+            {
+                <option value="">Все</option>
+            }
+
+            @* Купленные *@
+            @if (Model.Purchased == true)
+            {
+                <option value="true" selected="selected">Купленные</option>
+            }
+            else
+            {
+                <option value="true">Купленные</option>
+            }
+
+            @* Не купленные *@
+            @if (Model.Purchased == false)
+            {
+                <option value="false" selected="selected">Не купленные</option>
+            }
+            else
+            {
+                <option value="false">Не купленные</option>
+            }
+        </select>
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <select name="sortBy">
+                @if (Model.SortBy == "without")
+                {
+                    <option value="without" selected="selected">Без сортировка</option>
+                }
+                else
+                {
+                    <option value="without">Без сортировки</option>
+                }
+                @if (Model.SortBy == "title")
+                {
+                    <option value="title" selected="selected">Сортировать по названию</option>
+                }
+                else
+                {
+                    <option value="title">Сортировать по названию</option>
+                }
+                @if (Model.SortBy == "id")
+                {
+                    <option value="id" selected="selected">Сортировать по ID</option>
+                }
+                else
+                {
+                    <option value="id">Сортировать по ID</option>
+                }
+            </select>
+        }
+        <button type="submit" class="filter-input">Применить</button>
+        <button type="button" class="filter-reset" onclick="resetFilters()">Сбросить</button>
+
+        <script>
+            function resetFilters() {
+                const form = document.querySelector('.store-filters');
+                form.querySelectorAll('input, select').forEach(el => {
+                    if (el.tagName.toLowerCase() === 'select') {
+                        el.selectedIndex = 0;  
+                    } else {
+                        el.value = '';
+                    }
+                });
+                form.submit();
+            }
+        </script>
+    </form>
+</div>
+
+@if (!Model.Games.Any())
+{
+    <p>Store is empty right now</p>
+}
+else
+{
+    <div id="games-grid" class="games-grid">
+        @foreach (var game in Model.Games)
+        {
+            var owned = Model.PurchasedIds.Contains(game.Id);
+            <div class="game-tile @(owned ? "owned" : "")"
+                 onclick="location.href='@Url.Action("GameDetails", "Store", new { id = game.Id })'">
+                <div class="game-cover">
+                    <img src="@game.ImageUrl" alt="@game.Title" onerror="this.style.display='none'" />
+                </div>
+                <div class="game-body">
+                    <h3 class="game-title">@game.Title</h3>
+                    <div class="game-meta">
+                        <span class="game-tag">@game.Genre</span>
+                        <span class="price-badge">$@game.Price</span>
+                    </div>
+                    @if (owned)
+                    {
+                        <span class="owned-label">Owned</span>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
