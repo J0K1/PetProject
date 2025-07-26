@@ -39,7 +39,7 @@ launchSettings.json
 ## Файлы проектов ##
 *.csproj.user
 *.userprefs
-*.user
+## *.user
 *.pubxml
 
 ## Файлы пакетов ##
