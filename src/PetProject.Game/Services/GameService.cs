@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using PetProject.Game.Data;
 using PetProject.Shared.Constants;
-using PetProject.Shared.Data;
 using PetProject.Shared.Entities;
 using PetProject.Shared.Interfaces;
 using StackExchange.Redis;
@@ -10,11 +10,11 @@ namespace PetProject.Game.Services
 {
     public class GameService : IGameService
     {
-        private readonly AppDBContext _db;
+        private readonly GameDbContext _db;
         private readonly IDatabase _redis;
         private readonly ILogger _logger;
 
-        public GameService(AppDBContext dbContext, IConnectionMultiplexer redis, ILogger<GameService> logger)
+        public GameService(GameDbContext dbContext, IConnectionMultiplexer redis, ILogger<GameService> logger)
         {
             _db = dbContext;
             _redis = redis.GetDatabase();
@@ -73,7 +73,7 @@ namespace PetProject.Game.Services
 
         public async Task<GameEntity?> GetByIdAsync(int id)
         {
-            return await GetOrSetAsync(CacheKeys.GameId(id), () => _db.Games.FindAsync(id).AsTask(), CacheTimes.Medium);   
+            return await GetOrSetAsync(CacheKeys.GameId(id), () => _db.Games.FindAsync(id).AsTask(), CacheTimes.Medium);
         }
 
         public async Task<List<GameEntity>> GetByTitleAsync(string? title)
@@ -89,7 +89,7 @@ namespace PetProject.Game.Services
         }
 
         public async Task<List<GameEntity>> GetByYearAsync(int year)
-        { 
+        {
             return await _db.Games
                 .Where(g => g.Year == year)
                 .OrderBy(g => g.Title)
@@ -105,7 +105,7 @@ namespace PetProject.Game.Services
         public async Task<bool> UpdateAsync(int id, GameEntity updatedGame)
         {
             var game = await _db.Games.FindAsync(id);
-            if (game is null) 
+            if (game is null)
                 return false;
 
             game.Title = updatedGame.Title;
@@ -122,7 +122,7 @@ namespace PetProject.Game.Services
         public async Task<bool> DeleteAsync(int id)
         {
             var existing = await _db.Games.FindAsync(id);
-            if (existing is null) 
+            if (existing is null)
                 return false;
 
             _db.Games.Remove(existing);
@@ -175,8 +175,8 @@ namespace PetProject.Game.Services
                 {
                     await _redis.KeyDeleteAsync(key);
                 }
-            } 
-            catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 _logger.LogWarning(ex, "Unable to invalidate cache by prefix: {prefix}", prefix);
             }

@@ -1,7 +1,6 @@
 ## Файлы и папки IDE/редакторов ##
 .vs/
 .idea/
-*.user
 *.suo
 *.userprefs
 *.userosscache
@@ -52,3 +51,4 @@ launchSettings.json
 TestResults/
 
 PetProject.sln
+certs/

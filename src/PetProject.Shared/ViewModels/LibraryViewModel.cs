@@ -6,6 +6,6 @@ namespace PetProject.Shared.ViewModels
     {
         public List<GameEntity> Games { get; set; }
         public GameEntity SelectedGame { get; set; }
-    }
 
+    }
 }

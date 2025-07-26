@@ -6,7 +6,7 @@ namespace PetProject.Web.Extensions
     {
         public static IServiceCollection AddSteamServices(this IServiceCollection services, IConfiguration configuration)
         {
-            var steamApiKey = configuration["Steam:ApiKey"];
+            string steamApiKey = configuration["Steam:ApiKey"]!;
 
             services
                 .AddHttpClient<SteamService>()                       

@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using PetProject.Web.Extensions;
@@ -19,7 +17,7 @@ builder.WebHost.ConfigureKestrel(serverOptions =>
 {
     serverOptions.ListenAnyIP(5001, listenOptions =>
     {
-        listenOptions.UseHttps("certs/devcert.pfx", "123");
+        listenOptions.UseHttps(@"E:\ASP\PetProject\certs\devcert.pfx", "123");
     });
 });
 
@@ -32,39 +30,7 @@ builder.Configuration
 services.AddSingleton<IConnectionMultiplexer>(_ =>
     ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("Redis")!));
 
-services
-    .AddSharedServices()
-    .AddGameServices()
-    .AddUserServices()
-    .AddDatabase(configuration)
-    .AddSteamServices(configuration);
-
-services.AddMvc();
-
-services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
-services
-    .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
-    {
-        options.LoginPath = "/Auth/Login";
-        options.LogoutPath = "/Auth/Logout";
-        options.AccessDeniedPath = "/Error/Error404";
-        options.ExpireTimeSpan = TimeSpan.FromDays(7);
-        options.SlidingExpiration = true;
-    });
-
-services.AddDistributedMemoryCache();
-services.AddSession(options =>
-{
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-    options.IdleTimeout = TimeSpan.FromMinutes(30);
-});
-
-services.AddDataProtection()
-    .PersistKeysToFileSystem(new DirectoryInfo("/app/keys"))
-    .SetApplicationName("PetProject");
+services.AddWebServices(configuration);
 
 var app = builder.Build();
 
@@ -91,8 +57,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseSession();
-
-//app.UseHttpsRedirection();
 
 app.UseStatusCodePagesWithReExecute("/Error/{0}");
 
